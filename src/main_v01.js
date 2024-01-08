@@ -17,6 +17,7 @@ function init() {
     if (localStorage.getItem('theme') === 'dark') {
         htmlEle.classList.add('dark');
         htmlEle.classList.remove('light');
+        toggleButton.checked = true;
     } else {
         htmlEle.classList.add('light');
         htmlEle.classList.remove('dark');
