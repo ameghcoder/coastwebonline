@@ -24,4 +24,7 @@
   li {
     @apply list-inside list-disc;
   }
+  .hamburger-active {
+    @apply left-0;
+  }
 }
