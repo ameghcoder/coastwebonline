@@ -74,8 +74,8 @@
           <div
             class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
             <a rel="noopener noreferrer" href="#"
-              class="px-8 py-3 text-lg font-semibold rounded bg-rose-400 text-gray-900">Contact us</a>
-            <a rel="noopener noreferrer" href="#"
+              class="px-8 py-3 text-lg font-semibold rounded bg-rose-400 text-gray-900" id="contactbtn">Contact us</a>
+            <a rel="noopener noreferrer" href="#pricing"
               class="px-8 py-3 text-lg font-semibold border rounded border-gray-100">See Pricing</a>
           </div>
         </div>
@@ -206,11 +206,10 @@
       <div class="flex flex-col justify-between">
         <div class="space-y-2">
           <h2 class="text-4xl font-bold leadi lg:text-5xl">Let's talk!</h2>
-          <div class="text-gray-400">Vivamus in nisl metus? Phasellus.</div>
         </div>
         <img src="./doodle.svg" alt="" class="p-6 h-52 md:h-64" />
       </div>
-      <form novalidate="" class="space-y-6">
+      <form novalidate="true" class="space-y-6">
         <div>
           <label for="name" class="text-sm">Full name</label>
           <input id="name" type="text" placeholder="" class="w-full p-3 rounded bg-slate-100 dark:bg-slate-600" />
@@ -223,7 +222,8 @@
           <label for="message" class="text-sm">Message</label>
           <textarea id="message" rows="3" class="w-full p-3 rounded bg-slate-100 dark:bg-slate-600"></textarea>
         </div>
-        <button type="submit" class="w-full p-3 text-sm font-bold tracki uppercase rounded bg-rose-400 text-gray-900">
+        <button type="button" class="w-full p-3 text-sm font-bold tracki uppercase rounded bg-rose-400 text-gray-900"
+          id="sendmsg">
           Send Message
         </button>
       </form>
@@ -339,10 +339,7 @@
                   <span>Social Media Links</span>
                 </li>
               </ul>
-              <button type="button"
-                class="inline-block px-5 py-3 font-semibold tracki text-center rounded bg-rose-400 text-gray-900">
-                Get Started
-              </button>
+
             </div>
           </div>
           <div class="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
@@ -399,9 +396,6 @@
                   <span>With 1 year hosting</span>
                 </li>
               </ul>
-              <a rel="noopener noreferrer" href="#"
-                class="inline-block w-full px-5 py-3 font-bold tracki text-center rounded bg-white dark:bg-gray-800 text-rose-400">Get
-                Started</a>
             </div>
           </div>
           <div class="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
@@ -461,9 +455,6 @@
                   <span>Admin Panel</span>
                 </li>
               </ul>
-              <a rel="noopener noreferrer" href="#"
-                class="inline-block w-full px-5 py-3 font-semibold tracki text-center rounded bg-rose-400 text-gray-900">Get
-                Started</a>
             </div>
           </div>
         </div>
@@ -617,14 +608,40 @@
     <!-- pop up code  -->
 
     <div id="popup" class="fixed flex justify-center items-center backdrop-blur-sm "
-      style="width: 100%; height: 100%; display: block; visibility: hidden;">
+      style="width: 100%; height: 100%; display: none;">
       <div id="popup" class="p-4 rounded-md flex" style="width: auto; gap: 8px;">
         <a href="mailto:bs933623@gmail.com" class="bg-pink-400 py-2 px-4 rounded-lg">G-mail</a>
         <a href="http://" class="bg-pink-400 py-2 px-4 rounded-lg">Whatsapp</a>
         <a href="tel:+917850046053" class="bg-pink-400 py-2 px-4 rounded-lg">Call us</a>
-        <a href="./#contact " class="bg-pink-400 py-2 px-4 rounded-lg">Message Us</a>
+        <a onclick="this.parentElement.parentElement.style.display='none'" href="#contact"
+          class="bg-pink-400 py-2 px-4 rounded-lg">Message Us</a>
       </div>
+      <button type="button" class="absolute top-4 right-4 font-bold text-4xl" id="close">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
+          <linearGradient id="hbE9Evnj3wAjjA2RX0We2a_OZuepOQd0omj_gr1" x1="7.534" x2="27.557" y1="7.534" y2="27.557"
+            gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#f44f5a"></stop>
+            <stop offset=".443" stop-color="#ee3d4a"></stop>
+            <stop offset="1" stop-color="#e52030"></stop>
+          </linearGradient>
+          <path fill="url(#hbE9Evnj3wAjjA2RX0We2a_OZuepOQd0omj_gr1)"
+            d="M42.42,12.401c0.774-0.774,0.774-2.028,0-2.802L38.401,5.58c-0.774-0.774-2.028-0.774-2.802,0	L24,17.179L12.401,5.58c-0.774-0.774-2.028-0.774-2.802,0L5.58,9.599c-0.774,0.774-0.774,2.028,0,2.802L17.179,24L5.58,35.599	c-0.774,0.774-0.774,2.028,0,2.802l4.019,4.019c0.774,0.774,2.028,0.774,2.802,0L42.42,12.401z">
+          </path>
+          <linearGradient id="hbE9Evnj3wAjjA2RX0We2b_OZuepOQd0omj_gr2" x1="27.373" x2="40.507" y1="27.373" y2="40.507"
+            gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#a8142e"></stop>
+            <stop offset=".179" stop-color="#ba1632"></stop>
+            <stop offset=".243" stop-color="#c21734"></stop>
+          </linearGradient>
+          <path fill="url(#hbE9Evnj3wAjjA2RX0We2b_OZuepOQd0omj_gr2)"
+            d="M24,30.821L35.599,42.42c0.774,0.774,2.028,0.774,2.802,0l4.019-4.019	c0.774-0.774,0.774-2.028,0-2.802L30.821,24L24,30.821z">
+          </path>
+        </svg>
+      </button>
+      <!-- <button
+        style="position:absolute; top: 0px; right: 15px; font-weight: bold; font-size: 40px; color: pink;">X</button> -->
     </div>
+
 
     <!-- Footer -->
     <footer class="border-t border-gray-700 px-4 py-8 bg-white dark:bg-gray-800 text-gray-400">
@@ -645,7 +662,7 @@
         </div>
         <strong class="text-gray-800 dark:text-gray-100">
           <strong class="text-xl" style="font-family: monospace; ">+91 78500 46053 </strong> (For call) <br>
-          <strong class="text-xl" style="font-family: monospace;">+91 97820 34024 </strong> (Whatsapp only)
+          <strong class="text-xl" style="font-family: monospace;">+91 96729 54232 </strong> (Whatsapp only)
         </strong>
       </div>
     </footer>
