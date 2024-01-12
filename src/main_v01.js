@@ -72,10 +72,10 @@ function init() {
         }).then(response => response.json()).then(data => {
             // Handle the response
             console.log(data);
-            alert(data.message); // You can handle the response as needed
+            // alert(data.message); // You can handle the response as needed
         }).catch(error => {
             console.error('Error:', error);
-            alert('An error occurred. Please try again.');
+            // alert('An error occurred. Please try again.');
         });
     });
 }
