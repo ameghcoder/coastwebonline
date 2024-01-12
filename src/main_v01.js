@@ -66,7 +66,7 @@ function init() {
         formData.append('message', message);
 
         // Send POST request using fetch
-        fetch('https://oceanofcode.000webhostapp.com/api', {
+        fetch('https://cwo.jsrblogs.com/api', {
             method: 'POST',
             body: formData
         }).then(response => response.json()).then(data => {
