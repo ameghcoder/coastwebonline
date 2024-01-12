@@ -61,6 +61,10 @@ function init() {
         const email = document.getElementById('email').value.trim();
         const message = document.getElementById('message').value.trim();
 
+        if (name === "" || email === "" || message === "") {
+            return false;
+        }
+
         const formData = new FormData();
         formData.append('name', name);
         formData.append('email', email);
@@ -76,11 +80,19 @@ function init() {
             if (data["success"] === true) {
                 sentBtn.innerHTML = "Sent Successfully<br>We will contact you soon.";
                 sentBtn.style.backgroundColor = "lime";
+                setTimeout(() => {
+                    sentBtn.innerHTML = "Send Message";
+                    sentBtn.style.backgroundColor = "";
+                }, 5000);
             }
         }).catch(error => {
             document.getElementById('name').value = document.getElementById('email').value = document.getElementById('message').value = "";
             sentBtn.innerHTML = "Something went wrong<br>Please try again";
             sentBtn.style.backgroundColor = "red";
+            setTimeout(() => {
+                sentBtn.innerHTML = "Send Message";
+                sentBtn.style.backgroundColor = "";
+            }, 5000);
         });
     });
 }
