@@ -54,30 +54,33 @@ function init() {
 
 
     // let's talk code 
-    function sendData(url, data) {
-        return new Promise((resolve, reject) => {
-            let xhttp = new XMLHttpRequest();
-            xhttp.open('POST', url, true);
-            xhttp.onreadystatechange = () => {
-                if (this.readyState == 4 && this.status == 200) {
-                    resolve(this.responseText);
-                } else {
-                    reject(new Error("Page not found"));
-                }
-            }
-            xhttp.send(data);
-        })
-    }
+    document.getElementById('sendmsg').addEventListener('click', function () {
+        // Get values from the form
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
 
-    const sendmsg = document.getElementById('sendmsg');
+        const form = new FormData();
+        form.append('name', name);
+        form.append('email', email);
+        form.append('message', message);
 
-    sendmsg.addEventListener('click', function () {
-        sendData("{{url}}", "data").then((data) => {
+        // Send POST request using fetch
+        fetch('https://oceanofcode.000webhostapp.com/api', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'multipart/form-data'
+            },
+            body: form
+        }).then(response => response.json()).then(data => {
+            // Handle the response
             console.log(data);
-        }).catch((err) => {
-            console.error(err);
-        })
-    })
+            // alert(data.message); // You can handle the response as needed
+        }).catch(error => {
+            console.error('Error:', error);
+            // alert('An error occurred. Please try again.');
+        });
+    });
 }
 
 if (document.readyState === 'interactive') {
