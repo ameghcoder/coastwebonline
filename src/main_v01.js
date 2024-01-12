@@ -71,14 +71,14 @@ function init() {
             method: 'POST',
             body: formData
         }).then(response => response.json()).then(data => {
-            name.value = email.value = message.value = "";
+            document.getElementById('name').value = document.getElementById('email').value = document.getElementById('message').value = "";
             // Handle the response
             if (data["success"] === true) {
                 sentBtn.innerHTML = "Sent Successfully<br>We will contact you soon.";
                 sentBtn.style.backgroundColor = "lime";
             }
         }).catch(error => {
-            name.value = email.value = message.value = "";
+            document.getElementById('name').value = document.getElementById('email').value = document.getElementById('message').value = "";
             sentBtn.innerHTML = "Something went wrong<br>Please try again";
             sentBtn.style.backgroundColor = "red";
         });
