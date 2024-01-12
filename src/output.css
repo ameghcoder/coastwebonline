@@ -1797,16 +1797,16 @@ ul,
   justify-items: stretch;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-1 {
-  gap: 0.25rem;
 }
 
 .space-x-0 > :not([hidden]) ~ :not([hidden]) {
@@ -3315,6 +3315,10 @@ ul,
       max-width: 1536px;
     }
   }
+}
+
+.hover\:mb-4:hover {
+  margin-bottom: 1rem;
 }
 
 .hover\:font-bold:hover {
