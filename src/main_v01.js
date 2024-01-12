@@ -52,9 +52,10 @@ function init() {
         Popup.style.display = 'none';
     })
 
-
+    const sentBtn = document.getElementById('sendmsg');
     // let's talk code 
-    document.getElementById('sendmsg').addEventListener('click', function () {
+    sentBtn.addEventListener('click', function () {
+        sentBtn.innerText = "Wait ...";
         // Get values from the form
         const name = document.getElementById('name').value.trim();
         const email = document.getElementById('email').value.trim();
@@ -70,12 +71,16 @@ function init() {
             method: 'POST',
             body: formData
         }).then(response => response.json()).then(data => {
+            name.value = email.value = message.value = "";
             // Handle the response
-            console.log(data);
-            // alert(data.message); // You can handle the response as needed
+            if (data["success"] === true) {
+                sentBtn.innerHTML = "Sent Successfully<br>We will contact you soon.";
+                sentBtn.style.backgroundColor = "lime";
+            }
         }).catch(error => {
-            console.error('Error:', error);
-            // alert('An error occurred. Please try again.');
+            name.value = email.value = message.value = "";
+            sentBtn.innerHTML = "Something went wrong<br>Please try again";
+            sentBtn.style.backgroundColor = "red";
         });
     });
 }
