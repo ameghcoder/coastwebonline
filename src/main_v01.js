@@ -60,10 +60,10 @@ function init() {
         const email = document.getElementById('email').value.trim();
         const message = document.getElementById('message').value.trim();
 
-        const form = new FormData();
-        form.append('name', name);
-        form.append('email', email);
-        form.append('message', message);
+        const formData = new FormData();
+        formData.append('name', name);
+        formData.append('email', email);
+        formData.append('message', message);
 
         // Send POST request using fetch
         fetch('https://oceanofcode.000webhostapp.com/api', {
