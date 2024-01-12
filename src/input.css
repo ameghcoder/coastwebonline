@@ -27,4 +27,16 @@
   .hamburger-active {
     @apply left-0;
   }
+  .whatsapp-icon {
+    @apply w-24 h-24 bg-contain bg-center inline-block;
+    background-image: url("/assets/whatsapp-icon.webp");
+  }
+  .callus-icon {
+    @apply w-24 h-24 bg-contain bg-center inline-block;
+    background-image: url("/assets/phone-call-icon.webp");
+  }
+  .gmail-icon {
+    @apply w-24 h-24 bg-contain bg-center inline-block;
+    background-image: url("/assets/gmail-icon.webp");
+  }
 }

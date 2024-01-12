@@ -504,6 +504,33 @@ ul,
   left: 0px;
 }
 
+.whatsapp-icon {
+  display: inline-block;
+  height: 6rem;
+  width: 6rem;
+  background-size: contain;
+  background-position: center;
+  background-image: url("/assets/whatsapp-icon.webp");
+}
+
+.callus-icon {
+  display: inline-block;
+  height: 6rem;
+  width: 6rem;
+  background-size: contain;
+  background-position: center;
+  background-image: url("/assets/phone-call-icon.webp");
+}
+
+.gmail-icon {
+  display: inline-block;
+  height: 6rem;
+  width: 6rem;
+  background-size: contain;
+  background-position: center;
+  background-image: url("/assets/gmail-icon.webp");
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -1778,6 +1805,10 @@ ul,
   gap: 2rem;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .space-x-0 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0px * var(--tw-space-x-reverse));
@@ -2383,6 +2414,10 @@ ul,
 
 .bg-auto {
   background-size: auto;
+}
+
+.bg-contain {
+  background-size: contain;
 }
 
 .bg-cover {
