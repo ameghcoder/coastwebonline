@@ -1,1091 +1,178 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/output.css" />
-    <!-- favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="./assets/safari-pinned-tab.svg"
-      color="#01b9ef"
-    />
-    <meta name="apple-mobile-web-app-title" content="Coast Web Online" />
-    <meta name="application-name" content="Coast Web Online" />
-    <meta name="msapplication-TileColor" content="#01b9ef" />
-    <meta name="theme-color" content="#01b9ef" />
-    <title>Build Your Own Website - Made by Professionals</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="./src/output.css" />
+  <!-- favicon -->
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="./assets/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./assets/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="./assets/favicon-16x16.png"
+  />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link
+    rel="mask-icon"
+    href="./assets/safari-pinned-tab.svg"
+    color="#01b9ef"
+  />
+  <meta name="apple-mobile-web-app-title" content="Coast Web Online" />
+  <meta name="application-name" content="Coast Web Online" />
+  <meta name="msapplication-TileColor" content="#01b9ef" />
+  <meta name="theme-color" content="#01b9ef" />
+  <title>Build Your Own Website - Made by Professionals</title>
+</head>
 
-  <body class="bg-white dark:bg-gray-800">
-    <div class="flex flex-col w-full h-screen justify-between">
-      <!-- Header -->
-      <header
-        class="shadow-md bg-white dark:bg-gray-800 text-neutrael-400 dark:text-gray-100 relative"
-      >
-        <div class="w-full flex justify-between h-16 my-5">
-          <a
-            rel="noopener noreferrer"
-            href="./"
-            aria-label="Back to homepage"
-            class="flex items-center p-2"
-          >
-            <img
-              class="w-16 rounded-md"
-              src="./assets/CW_Minimalist.png"
-              alt="logo"
-            />
-          </a>
-          <ul
-            id="nav"
-            class="transition-all items-stretch bg-white dark:bg-gray-800 absolute top-40 shadow-lg py-4 -left-full w-screen md:relative md:w-auto md:top-auto md:left-auto md:flex md:justify-end md:p-0 md:shadow-none"
-          >
-            <li class="flex justify-center">
-              <a
-                rel="noopener noreferrer"
-                href="./#about"
-                class="flex items-center px-4 -mb-1 border-b-2 border-transparent py-1 hover:underline"
-                >About us</a
-              >
-            </li>
-            <li class="flex justify-center">
-              <a
-                rel="noopener noreferrer"
-                href="./#contact"
-                class="flex items-center px-4 -mb-1 border-b-2 border-transparent py-1 hover:underline"
-                >Contact</a
-              >
-            </li>
-            <li class="flex justify-center">
-              <a
-                rel="noopener noreferrer"
-                href="./#pricing"
-                class="flex items-center px-4 -mb-1 border-b-2 border-transparent py-1 hover:underline"
-                >Pricing</a
-              >
-            </li>
-            <li class="flex justify-center">
-              <a
-                rel="noopener noreferrer"
-                href="./#servicing"
-                class="flex items-center px-4 -mb-1 border-b-2 border-transparent py-1 hover:underline"
-                >Service</a
-              >
-            </li>
-          </ul>
-
-          <button
-            title="Button"
-            type="button"
-            id="hamburger"
-            class="p-4 md:hidden"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              class="w-6 h-6 text-neutrael-400 dark:text-gray-100"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              ></path>
-            </svg>
-          </button>
-        </div>
-        <div class="toggle-menu flex items-center justify-center my-5">
-          <label
-            for="Toggle1"
-            class="inline-flex items-center space-x-4 cursor-pointer dark:text-gray-100"
-          >
-            <span>Light</span>
-            <span class="relative">
-              <input id="Toggle1" type="checkbox" class="hidden peer" />
-              <div
-                class="w-10 h-6 rounded-full shadow-inner bg-gray-600 dark:bg-gray-400 peer-checked:dark:bg-violet-400"
-              ></div>
-              <div
-                class="absolute inset-y-0 left-0 w-4 h-4 m-1 rounded-full bg-gray-400 shadow peer-checked:right-0 peer-checked:left-auto dark:bg-gray-800"
-              ></div>
-            </span>
-            <span>Dark</span>
-          </label>
-        </div>
-      </header>
-      <!--  First -->
-      <section
-        class="mt-2 bg-white dark:bg-gray-800 text-neutrael-400 dark:text-gray-100"
-      >
-        <div
-          class="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between"
-        >
-          <div
-            class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left"
-          >
-            <h1 class="text-5xl font-bold leadi sm:text-6xl">
-              Own Website
-              <span class="text-rose-400">Own Business</span>
-            </h1>
-            <p class="mt-6 mb-8 text-lg sm:mb-12">
-              Create amazing website by us for all types of business and get
-              <br class="hidden md:inline lg:hidden" /><span
-                class="text-rose-400"
-                >free life time support</span
-              >
-            </p>
-            <div
-              class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start"
-            >
-              <a
-                rel="noopener noreferrer"
-                href="#"
-                class="px-8 py-3 text-lg font-semibold rounded bg-rose-400 text-gray-900"
-                id="contactbtn"
-                >Contact us</a
-              >
-              <a
-                rel="noopener noreferrer"
-                href="#pricing"
-                class="px-8 py-3 text-lg font-semibold border rounded border-gray-100"
-                >See Pricing</a
-              >
-            </div>
-          </div>
-          <div
-            class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
-          >
-            <img
-              src="./assets/01.webp"
-              alt="hero image"
-              class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
-            />
-          </div>
-        </div>
-      </section>
-      <hr class="w-1/2 m-auto border-t border-gray-700" />
-      <!-- Second -->
-      <section
-        class="m-4 md:m-8 bg-white dark:bg-gray-800 text-neutrael-400 dark:text-gray-100"
-        id="servicing"
-      >
-        <div class="container mx-auto p-4 my-6 space-y-2 text-center">
-          <h2 class="text-5xl font-bold">Services</h2>
-        </div>
-        <div
-          class="container mx-auto grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-3"
-        >
-          <div class="flex flex-col items-center p-4">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              class="w-8 h-8 text-rose-400"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-            <h3 class="my-3 text-center text-3xl font-semibold">
-              Website <br />
-              Development
-            </h3>
-            <div class="space-y-1 leadi text-center">
-              <p>
-                Custom design, responsive development, e-commerce, Wordpress,
-                security, performance, scalability, analytics
-              </p>
-            </div>
-          </div>
-          <div class="flex flex-col items-center p-4">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              class="w-8 h-8 text-rose-400"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-            <h3 class="my-3 text-center text-3xl font-semibold">
-              App <br />
-              Development
-            </h3>
-            <div class="space-y-1 leadi text-center">
-              <p>
-                Unique design, responsive development, e-commerce functionality,
-                SEO, robust security, high performance, scalability options,
-                reliable support, integrated analytics.
-              </p>
-            </div>
-          </div>
-          <div class="flex flex-col items-center p-4">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              class="w-8 h-8 text-rose-400"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-            <h3 class="my-3 text-center text-3xl font-semibold">
-              Graphics <br />
-              Design
-            </h3>
-            <div class="space-y-1 leadi text-center">
-              <p>
-                Custom graphics, AI Generated Design, branding, illustrations,
-                UI/UX, print media, social media assets, vector art
-              </p>
-            </div>
-          </div>
-          <div class="flex flex-col items-center p-4">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              class="w-8 h-8 text-rose-400"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-            <h3 class="my-3 text-center text-3xl font-semibold">
-              Digital <br />
-              Marketing
-            </h3>
-            <div class="space-y-1 leadi text-center">
-              <p>
-                SEO, SEM, social media campaigns, content marketing, email
-                campaigns, analytics tracking, lead generation, conversion
-                optimization.
-              </p>
-            </div>
-          </div>
-          <div class="flex flex-col items-center p-4">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              class="w-8 h-8 text-rose-400"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-            <h3 class="my-3 text-center text-3xl font-semibold">
-              Youtube <br />
-              Assets
-            </h3>
-            <div class="space-y-1 leadi text-center">
-              <p>
-                Custom thumbnails, channel art, intro/outro animations, logo
-                animation, video overlays, lower thirds, end screens, social
-                media promo graphics
-              </p>
-            </div>
-          </div>
-          <div class="flex flex-col items-center p-4">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              class="w-8 h-8 text-rose-400"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-            <h3 class="my-3 text-center text-3xl font-semibold">
-              Business Setup<br />
-              on Google
-            </h3>
-            <div class="space-y-1 leadi text-center">
-              <p>
-                Optimize your business on Google with GMB setup, local SEO,
-                Google Ads, and analytics integration for success.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <hr class="w-1/2 m-auto border-t border-gray-700" />
-      <!-- Third  (Chat Section) -->
-      <div
-        class="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto my-5 rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 bg-white dark:bg-gray-800 text-neutrael-400 dark:text-gray-100"
-        id="contact"
-      >
-        <div class="flex flex-col justify-between">
-          <div class="space-y-2">
-            <h2 class="text-4xl font-bold leadi lg:text-5xl">Let's talk!</h2>
-          </div>
-          <img src="./assets/doodle.svg" alt="" class="p-6 h-52 md:h-64" />
-        </div>
-        <form novalidate="true" class="space-y-6">
-          <div>
-            <label for="name" class="text-sm">Full name</label>
-            <input
-              id="name"
-              type="text"
-              placeholder="Enter your name ..."
-              required
-              class="w-full p-3 rounded bg-slate-100 dark:bg-slate-600"
-            />
-          </div>
-          <div>
-            <label for="email" class="text-sm">Email</label>
-            <input
-              id="email"
-              type="email"
-              required
-              placeholder="Enter your email address ..."
-              class="w-full p-3 rounded bg-slate-100 dark:bg-slate-600"
-            />
-          </div>
-          <div>
-            <label for="message" class="text-sm">Message</label>
-            <textarea
-              id="message"
-              rows="3"
-              required
-              spellcheck="true"
-              placeholder="Enter your message..."
-              class="w-full p-3 rounded bg-slate-100 dark:bg-slate-600"
-            ></textarea>
-          </div>
-          <button
-            type="button"
-            class="w-full p-3 text-sm font-bold tracki uppercase rounded bg-rose-400 text-gray-900"
-            id="sendmsg"
-          >
-            Send Message
-          </button>
-        </form>
-      </div>
-      <hr class="w-1/2 m-auto border-t border-gray-700" />
-      <!-- Fourth -->
-      <section
-        class="py-6 bg-white dark:bg-gray-800 text-neutrael-400 dark:text-gray-100"
-        id="about"
-      >
-        <div
-          class="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10"
-        >
-          <h1 class="text-4xl font-bold leadi text-center sm:text-5xl">
-            Our team
-          </h1>
-          <p class="max-w-2xl text-center text-gray-400">
-            "Our team is a skilled and collaborative force, dedicated to
-            transforming ideas into successful outcomes. We pride ourselves on
-            creativity, technical expertise, and a shared commitment to client
-            satisfaction."
-          </p>
-          <div class="flex flex-row flex-wrap-reverse justify-center">
-            <div class="flex flex-col justify-center m-8 text-center">
-              <img
-                alt=""
-                class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500"
-                src="./assets/yash.jpg"
-              />
-              <p class="text-xl font-semibold leadi text-center">Yashraj Yadav</p>
-              <p class="text-gray-400 text-center">
-                Project Manager <br />
-                & Full Stack Developer
-              </p>
-            </div>
-            <div class="flex flex-col justify-center m-8 text-center">
-              <img
-                alt=""
-                class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500"
-                src="./assets/bharat.jpg"
-              />
-              <p class="text-xl font-semibold leadi text-center">
-                Bharat Sharma
-              </p>
-              <p class="text-gray-400 text-center">
-                Backend Developer <br />
-                & Customer Support
-              </p>
-            </div>
-            <div class="flex flex-col justify-center m-8 text-center">
-              <img
-                alt=""
-                class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500"
-                src="./assets/sagar.png"
-              />
-              <p class="text-xl font-semibold leadi text-center">Sagar Mehra</p>
-              <p class="text-gray-400 text-center">Frontend Developer</p>
-            </div>
-            <div class="flex flex-col justify-center m-8 text-center">
-              <img
-                alt=""
-                class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500"
-                src="./assets/shubham.jpg"
-              />
-              <p class="text-xl font-semibold leadi text-center">
-                Shubham Sharma
-              </p>
-              <p class="text-gray-400 text-center">
-                SEO & Marketing Specialist <br />& Customer Support
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <hr class="w-1/2 m-auto border-t border-gray-700" />
-      <section
-        class="py-20 bg-white dark:bg-gray-800 text-neutrael-400 dark:text-gray-100"
-        id="pricing"
-      >
-        <div class="container px-4 mx-auto">
-          <div class="max-w-2xl mx-auto mb-16 text-center">
-            <span class="font-bold tracki uppercase text-rose-400"
-              >Pricing</span
-            >
-            <h2 class="text-4xl font-bold lg:text-5xl">
-              Choose your best plan
-            </h2>
-          </div>
-          <div class="flex flex-wrap items-stretch -mx-4">
-            <div class="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
-              <div
-                class="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8 dark:bg-gray-800 bg-slate-100"
-              >
-                <div class="space-y-2">
-                  <h4 class="text text-2xl font-bold">Basic</h4>
-                  <span class="text-6xl font-bold">₹ 4,999</span>
-                </div>
-                <p class="mt-3 leadi text-gray-400">Single page website.</p>
-                <ul class="flex-1 mb-6 text-gray-400">
-                  <li class="flex mb-2 space-x-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      class="flex-shrink-0 w-6 h-6 text-rose-400"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                    <span>Modern Design Website</span>
-                  </li>
-                  <li class="flex mb-2 space-x-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      class="flex-shrink-0 w-6 h-6 text-rose-400"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                    <span>With Google Search Console & Analytics Setup</span>
-                  </li>
-                  <li class="flex mb-2 space-x-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      class="flex-shrink-0 w-6 h-6 text-rose-400"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                    <span>Free Logo & Graphics (upto 4)</span>
-                  </li>
-                  <li class="flex mb-2 space-x-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      class="flex-shrink-0 w-6 h-6 text-rose-400"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                    <span>Contact form</span>
-                  </li>
-                  <li class="flex mb-2 space-x-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      class="flex-shrink-0 w-6 h-6 text-rose-400"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                    <span>Social Media Links</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
-              <div
-                class="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8 bg-rose-400 text-gray-900"
-              >
-                <div class="space-y-2">
-                  <h4 class="text-2xl font-bold">Advance</h4>
-                  <span class="text-6xl font-bold">₹ 14,999 </span>
-                </div>
-                <p class="leadi">Fully functional multipage website</p>
-                <ul class="flex-1 space-y-2">
-                  <li class="flex items-center space-x-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      class="flex-shrink-0 w-6 h-6"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                    <span>Including basic plan features</span>
-                  </li>
-                  <li class="flex items-center space-x-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      class="flex-shrink-0 w-6 h-6"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                    <span>3 month free support (Under terms)</span>
-                  </li>
-                  <li class="flex items-center space-x-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      class="flex-shrink-0 w-6 h-6"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                    <span>Website pages upto-10</span>
-                  </li>
-                  <li class="flex items-center space-x-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      class="flex-shrink-0 w-6 h-6"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                    <span>Dynamic website</span>
-                  </li>
-                  <li class="flex items-center space-x-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      class="flex-shrink-0 w-6 h-6"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                    <span>With 1 year hosting</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
-              <div
-                class="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8 dark:bg-gray-800 bg-slate-100"
-              >
-                <div class="space-y-2">
-                  <h4 class="text-2xl font-bold">Professional</h4>
-                  <span class="text-4xl font-bold">Contact us </span>
-                </div>
-                <p class="leadi text-gray-400">
-                  If you want any type of "Professional" website, you can
-                  contact us
-                </p>
-                <ul class="space-y-2 text-gray-400">
-                  <li class="flex items-start space-x-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      class="flex-shrink-0 w-6 h-6 text-rose-400"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                    <span>Including advance features</span>
-                  </li>
-                  <li class="flex items-start space-x-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      class="flex-shrink-0 w-6 h-6 text-rose-400"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                    <span>6 months free support (Under terms) </span>
-                  </li>
-                  <li class="flex items-start space-x-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      class="flex-shrink-0 w-6 h-6 text-rose-400"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                    <span>1 year hosting</span>
-                  </li>
-                  <li class="flex items-start space-x-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      class="flex-shrink-0 w-6 h-6 text-rose-400"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                    <span>Unlimited Dynamic Pages</span>
-                  </li>
-                  <li class="flex items-start space-x-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      class="flex-shrink-0 w-6 h-6 text-rose-400"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                    <span>Admin Panel</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <hr class="w-1/2 m-auto border-t border-gray-700" />
-      <!-- Fifth -->
-      <section
-        class="bg-white dark:bg-gray-800 text-neutrael-400 dark:text-gray-100"
-      >
-        <div class="container px-6 py-12 mx-auto">
-          <div class="grid items-center gap-4 xl:grid-cols-5">
-            <div
-              class="max-w-2xl mx-auto my-8 space-y-4 text-center xl:col-span-2 xl:text-left"
-            >
-              <h2 class="text-4xl font-bold">Feedback from you</h2>
-              <p class="text-gray-400">
-                "Thrilled with our website? Share your thoughts! Click here to
-                send your feedback and let CoastWebOnline know how their
-                expertise transformed your online presence. Your insights
-                matter!"
-              </p>
-              <!-- <button
-                type="button"
-                class="px-8 py-3 font-semibold rounded-full bg-pink-400 shadow-lg"
-              >
-                Feedback
-              </button> -->
-            </div>
-
-            <div class="p-6 xl:col-span-3">
-              <div class="grid gap-4 md:grid-cols-2">
-                <div class="grid content-center gap-4">
-                  <div
-                    class="p-6 rounded shadow-md dark:bg-gray-800 bg-slate-100"
-                  >
-                    <p>
-                      Our decision to work with CoastWebOnline for our jewelry
-                      website has truly paid off. Their understanding of the
-                      aesthetics and intricacies of the jewelry industry is
-                      evident in the stunning website they created for us. From
-                      captivating visuals to seamless navigation, CoastWebOnline
-                      has given our jewelry brand an online presence that
-                      sparkles as much as our products do.
-                    </p>
-                    <div class="flex items-center mt-4 space-x-4">
-                      <img
-                        src="./assets/review1.webp"
-                        alt=""
-                        class="w-12 h-12 bg-center bg-cover rounded-full bg-gray-500"
-                      />
-                      <div>
-                        <p class="text-lg font-semibold">Akhil Rao</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="p-6 rounded dark:bg-gray-800 bg-slate-100 shadow-md"
-                  >
-                    <p>
-                      CoastWebOnline transformed my personal portfolio into a
-                      professional showcase. Their attention to detail and
-                      creative flair brought my vision to life, creating a
-                      website that not only reflects my skills and achievements
-                      but also stands out in the competitive job market. The
-                      collaboration was smooth, and the result is a personal
-                      portfolio that I'm proud to share.
-                    </p>
-                    <div class="flex items-center mt-4 space-x-4">
-                      <img
-                        src="./assets/review2.webp"
-                        alt=""
-                        class="w-12 h-12 bg-center bg-cover rounded-full bg-gray-500"
-                      />
-                      <div>
-                        <p class="text-lg font-semibold">Yatin Setia</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="grid content-center gap-4">
-                  <div
-                    class="p-6 rounded shadow-md dark:bg-gray-800 bg-slate-100"
-                  >
-                    <p>
-                      Choosing CoastWebOnline for our school website was a wise
-                      decision. Their team demonstrated a deep understanding of
-                      educational needs, resulting in a website that seamlessly
-                      integrates information, engagement, and ease of use. The
-                      professionalism exhibited during the process ensured our
-                      school's online presence reflects our commitment to
-                      academic excellence.
-                    </p>
-                    <div class="flex items-center mt-4 space-x-4">
-                      <img
-                        src="./assets/review3.webp"
-                        alt=""
-                        class="w-12 h-12 bg-center bg-cover rounded-full bg-gray-500"
-                      />
-                      <div>
-                        <p class="text-lg font-semibold">Harish Saini</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="p-6 rounded shadow-md dark:bg-gray-800 bg-slate-100"
-                  >
-                    <p>
-                      "Grateful for Diamond Web's incredible work on my website!
-                      I'm from India but working here in New York, their
-                      expertise and attention to detail truly made a difference.
-                      Thank you for bringing a touch of artistry and
-                      professionalism to my online presence!"
-                    </p>
-                    <div class="flex items-center mt-4 space-x-4">
-                      <img
-                        src="./assets/review4.webp"
-                        alt=""
-                        class="w-12 h-12 bg-center bg-cover rounded-full bg-gray-500"
-                      />
-                      <div>
-                        <p class="text-lg font-semibold">Pawan sethi</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <hr class="w-1/2 m-auto border-t border-gray-700" />
-      <!-- Sixth -->
-      <section
-        class="bg-white dark:bg-gray-800 text-neutrael-400 dark:text-gray-100"
-      >
-        <div class="container flex flex-col justify-center p-4 mx-auto md:p-8">
-          <h2 class="mb-12 text-4xl font-bold leadi text-center sm:text-5xl">
-            Frequently Asked Questions
-          </h2>
-          <div
-            class="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700"
-          >
-            <details>
-              <summary class="py-2 outline-none cursor-pointer focus:underline">
-                Can you redesign an existing website?
-              </summary>
-              <div class="px-4 pb-4">
-                <p>
-                  Yes, we can redesign and revamp existing websites to enhance
-                  their visual appeal, functionality, and user experience.
-                  Contact us to discuss your goals for the redesign, and we'll
-                  provide you with a tailored solution.
-                </p>
-              </div>
-            </details>
-            <details>
-              <summary class="py-2 outline-none cursor-pointer focus:underline">
-                How long does it take to develop a website?
-              </summary>
-              <div class="px-4 pb-4">
-                <p>
-                  The timeline for website development depends on the size and
-                  complexity of the project. Simple websites may take a few
-                  days, while more complex projects may require several weeks.
-                  We work closely with clients to establish realistic timelines
-                  and milestones.
-                </p>
-              </div>
-            </details>
-            <details>
-              <summary class="py-2 outline-none cursor-pointer focus:underline">
-                What security measures do you implement for websites?
-              </summary>
-              <div class="px-4 pb-4 space-y-2">
-                <p>
-                  Security is a top priority for us. We implement
-                  industry-standard security practices, use secure coding
-                  techniques, and regularly update software to protect your
-                  website from potential threats. Additionally, we offer SSL
-                  certificate integration for secure data transmission, and we
-                  also implement cloudflare to protect form DDoS attacks.
-                </p>
-              </div>
-            </details>
-            <details>
-              <summary class="py-2 outline-none cursor-pointer focus:underline">
-                What makes your web development process unique?
-              </summary>
-              <div class="px-4 pb-4 space-y-2">
-                <p>
-                  Our web development process is collaborative and transparent.
-                  We involve clients in key decision-making stages, provide
-                  regular updates, and prioritize feedback to ensure the final
-                  product aligns with your vision and goals.
-                </p>
-              </div>
-            </details>
-          </div>
-        </div>
-      </section>
-
-      <!-- pop up code  -->
-
-      <div
-        id="popup"
-        class="fixed flex justify-center items-center backdrop-blur-sm"
-        style="width: 100%; height: 100%; display: none"
-      >
-        <div
-          id="popup"
-          class="p-4 rounded-md flex flex-wrap gap-1 justify-center items-center"
-          style="width: auto; gap: 8px"
-        >
-          <a
-            target="_blank"
-            href="mailto:gloztik+business@gmail.com"
-            class="bg-white dark:bg-gray-800 shadow-md rounded-full py-4 px-4 transition-all hover:mb-4"
-          >
-            <i class="gmail-icon"></i>
-          </a>
-          <a
-            target="_blank"
-            href="https://wa.me/919024900545"
-            class="bg-white dark:bg-gray-800 shadow-md rounded-full py-4 px-4 transition-all hover:mb-4"
-          >
-            <i class="whatsapp-icon"></i>
-          </a>
-          <a
-            target="_blank"
-            href="tel:917850046053"
-            class="bg-white dark:bg-gray-800 shadow-md rounded-full py-4 px-4 transition-all hover:mb-4"
-          >
-            <i class="callus-icon"></i>
-          </a>
-        </div>
-        <button
-          type="button"
-          class="absolute top-4 right-4 font-bold text-4xl"
-          id="close"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            x="0px"
-            y="0px"
-            width="30"
-            height="30"
-            viewBox="0 0 48 48"
-          >
-            <linearGradient
-              id="hbE9Evnj3wAjjA2RX0We2a_OZuepOQd0omj_gr1"
-              x1="7.534"
-              x2="27.557"
-              y1="7.534"
-              y2="27.557"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop offset="0" stop-color="#f44f5a"></stop>
-              <stop offset=".443" stop-color="#ee3d4a"></stop>
-              <stop offset="1" stop-color="#e52030"></stop>
-            </linearGradient>
-            <path
-              fill="url(#hbE9Evnj3wAjjA2RX0We2a_OZuepOQd0omj_gr1)"
-              d="M42.42,12.401c0.774-0.774,0.774-2.028,0-2.802L38.401,5.58c-0.774-0.774-2.028-0.774-2.802,0	L24,17.179L12.401,5.58c-0.774-0.774-2.028-0.774-2.802,0L5.58,9.599c-0.774,0.774-0.774,2.028,0,2.802L17.179,24L5.58,35.599	c-0.774,0.774-0.774,2.028,0,2.802l4.019,4.019c0.774,0.774,2.028,0.774,2.802,0L42.42,12.401z"
-            ></path>
-            <linearGradient
-              id="hbE9Evnj3wAjjA2RX0We2b_OZuepOQd0omj_gr2"
-              x1="27.373"
-              x2="40.507"
-              y1="27.373"
-              y2="40.507"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop offset="0" stop-color="#a8142e"></stop>
-              <stop offset=".179" stop-color="#ba1632"></stop>
-              <stop offset=".243" stop-color="#c21734"></stop>
-            </linearGradient>
-            <path
-              fill="url(#hbE9Evnj3wAjjA2RX0We2b_OZuepOQd0omj_gr2)"
-              d="M24,30.821L35.599,42.42c0.774,0.774,2.028,0.774,2.802,0l4.019-4.019	c0.774-0.774,0.774-2.028,0-2.802L30.821,24L24,30.821z"
-            ></path>
-          </svg>
-        </button>
-        <!-- <button
-        style="position:absolute; top: 0px; right: 15px; font-weight: bold; font-size: 40px; color: pink;">X</button> -->
-      </div>
-
-      <!-- Footer -->
-      <footer
-        class="border-t border-gray-700 px-4 py-8 bg-white dark:bg-gray-800 text-gray-400"
-      >
-        <div
-          class="container flex flex-wrap items-center justify-center mx-auto space-y-4 sm:justify-between sm:space-y-0"
-        >
-          <div class="flex flex-row pr-3 space-x-4 sm:space-x-8">
-            <div
-              class="flex items-center justify-center flex-shrink-0 w-12 h-12 rounded-full bg-rose-400"
-            >
-              <img
-                class="w-16 rounded-full"
-                src="./assets/CW_Minimalist.png"
-                alt="footer logo"
-              />
-            </div>
-            <ul class="flex flex-wrap items-center space-x-4 sm:space-x-8">
-              <li>
-                <a rel="noopener noreferrer" href="./termsandconditions.html"
-                  >Terms of Use</a
-                >
-              </li>
-              <li>
-                <a rel="noopener noreferrer" href="./privacypolicy.html"
-                  >Privacy</a
-                >
-              </li>
-            </ul>
-          </div>
-          <strong class="text-gray-800 dark:text-gray-100">
-            <strong class="text-xl" style="font-family: monospace">
-              +91 78500 46053
-            </strong>
-            (For call) <br />
-            <strong class="text-xl" style="font-family: monospace">
-              +91 97820 34024
-            </strong>
-            (Whatsapp only)
-          </strong>
-        </div>
-      </footer>
+<body data-theme="light">
+  <div class="relative">
+    <div id="weblogo" class="absolute top-2 left-4 w-full max-w-12 h-auto overflow-hidden rounded-lg">
+      <img src="./assets/logoForWeb.webp" alt="website brand logo">
     </div>
-    <script src="./src/main_v01.js"></script>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TY4T56KN0G"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <header id="header" class="z-50 fixed top-1/2 left-4 flex flex-col justify-between items-center py-2">
+      <div class="flex gap-2 justify-between items-center w-full max-w-5xl mx-auto bg-q_background_clr/50 backdrop-blur-lg shadow-lg my-2 rounded-lg border border-q_br_clr">
+        <ul class="w-full h-auto flex flex-col items-center gap-2">
+          <li class="list-none group relative px-2 py-1 hover:bg-q_surface_clr hover:rounded-md hover:shadow-md"><a href="#home">
+            <span class="icon home-icon" title="Homepage"></span>
+            <span class="absolute top-0 left-12 bg-q_surface_clr block overflow-hidden w-0 p-0 transition-all rounded-lg shadow-lg group-hover:w-auto group-hover:p-2 ">Home</span>
+          </a></li>
+          <li class="list-none group relative px-2 py-1 hover:bg-q_surface_clr hover:rounded-md hover:shadow-md"><a href="#about">
+            <span class="icon team-icon" title="About us"></span>
+            <span class="absolute top-0 left-12 bg-q_surface_clr block overflow-hidden w-0 p-0 transition-all rounded-lg shadow-lg group-hover:w-auto group-hover:p-2 ">About</span>
+          </a></li>
+          <li class="list-none group relative px-2 py-1 hover:bg-q_surface_clr hover:rounded-md hover:shadow-md"><a href="#work">
+            <span class="icon work-icon" title="Our Work"></span>
+            <span class="absolute top-0 left-12 bg-q_surface_clr block overflow-hidden w-0 p-0 transition-all rounded-lg shadow-lg group-hover:w-auto group-hover:p-2 ">Our_Work</span>
+          </a></li>
+          <li class="list-none group relative px-2 py-1 hover:bg-q_surface_clr hover:rounded-md hover:shadow-md"><a href="#service">
+            <span class="icon services-icon" title="Services"></span>
+            <span class="absolute top-0 left-12 bg-q_surface_clr block overflow-hidden w-0 p-0 transition-all rounded-lg shadow-lg group-hover:w-auto group-hover:p-2 ">Services</span>
+          </a></li>
+          <li class="list-none group relative px-2 py-1 hover:bg-q_surface_clr hover:rounded-md hover:shadow-md"><a href="#pricing">
+            <span title="Pricing" class="icon pricing-icon"></span>
+            <span class="absolute top-0 left-12 bg-q_surface_clr block overflow-hidden w-0 p-0 transition-all rounded-lg shadow-lg group-hover:w-auto group-hover:p-2 ">Price</span>
+          </a></li>
+          <li class="list-none group relative px-2 py-1 hover:bg-q_surface_clr hover:rounded-md hover:shadow-md"><a href="#testimonials">
+            <span class="icon testimonial-icon" title="Testimonials"></span>
+            <span class="absolute top-0 left-12 bg-q_surface_clr block overflow-hidden w-0 p-0 transition-all rounded-lg shadow-lg group-hover:w-auto group-hover:p-2 ">People_Words</span>
+          </a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="w-screen whitespace-nowrap scroll-snap pl-20">
+      <div id="home" class="w-screen h-screen p-4 flex flex-col gap-2 justify-center relative">
+        <div class="flex flex-col justify-center items-center gap-2">
+          <h1 class="font-bold text-6xl text-center flex items-center justify-center gap-2">
+            <strong>We</strong>
+            <strong class="relative overflow-hidden h-20 -mt-2 noScrollbar">
+              <span id="text-slider-upDown" class="flex flex-col gap-4 items-start transition-all">
+                <span class="p-4 grad-text-prop grad-text-clr-velvetSun">Design</span>
+                <span class="p-4 grad-text-prop grad-text-clr-summer">Develop</span>
+                <span class="p-4 grad-text-prop grad-text-clr-orangeCoral">Deliver</span>
+              </span>
+            </strong>
+          </h1>
+          <h2 class="font-semibold text-4xl text-center">Make Your Brand Online</h2>
+          
+          <button class="relative bg-q_background_clr rounded-s-full rounded-e-full hover:rounded-e-none transition-all px-4 py-2 group shadow-2xl" type="button">
+            <span class="z-10 text-xl font-semibold tracking-wider">
+              Say Hello !
+            </span>
+            <span class="absolute -z-10 top-0 right-0 flex invisible group-hover:-right-12 group-hover:visible w-11 h-11 bg-q_background_clr rounded-e-full items-center justify-center transition-all animate-pulse" style="padding: 6px 0;">
+              <span class="small-icon right-arrow"></span>
+            </span>
+          </button>
+        </div>
+        <div class="blob-box">
+          <div class="blob-container absolute top-0 left-0 w-full h-auto -z-50">
+            <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+              <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" class="first-stopColor"></stop>
+                  <stop offset="100%" class="second-stopColor"></stop>
+                </linearGradient>
+              </defs>
+              <path fill="url(#gradient)">
+                <animate 
+                attributeName="d"
+                dur="25000ms"
+                repeatCount="indefinite"
+                values="
+                M377,274Q341,298,360,367.5Q379,437,328,455.5Q277,474,234,439.5Q191,405,131,406.5Q71,408,55.5,355Q40,302,57,254.5Q74,207,88.5,163Q103,119,161,143.5Q219,168,243.5,133.5Q268,99,322.5,82.5Q377,66,372.5,127Q368,188,390.5,219Q413,250,377,274Z;
+                M419.12076,300.89639Q443.51075,351.79277,417.8526,404.03849Q392.19445,456.2842,330.02992,427.08118Q267.86538,397.87815,219.79059,427.82798Q171.7158,457.77781,150.2842,407.51496Q128.8526,357.2521,94.57588,327.08866Q60.29916,296.92521,89.98613,257.54487Q119.67311,218.16454,98.1421,157.41773Q76.61109,96.67092,133.59614,94.27454Q190.58118,91.87815,228.78311,100.00639Q266.98504,108.13462,296.11109,124.11328Q325.23714,140.09193,365.39529,154.40386Q405.55344,168.7158,400.1421,209.3579Q394.73076,250,419.12076,300.89639Z;
+                M361.5,276.5Q351,303,354.5,355Q358,407,315,417.5Q272,428,231,418Q190,408,140.5,399.5Q91,391,64.5,346.5Q38,302,48,252.5Q58,203,122,198Q186,193,179.5,120.5Q173,48,223.5,48Q274,48,333,46Q392,44,364.5,124.5Q337,205,354.5,227.5Q372,250,361.5,276.5Z;
+                M440,303.5Q454,357,423,406Q392,455,326.5,400Q261,345,224,380.5Q187,416,187,361Q187,306,178,288Q169,270,166.5,249.5Q164,229,137,177.5Q110,126,149,106.5Q188,87,228.5,92.5Q269,98,287,134Q305,170,344,175Q383,180,404.5,215Q426,250,440,303.5Z;
+                M377,274Q341,298,360,367.5Q379,437,328,455.5Q277,474,234,439.5Q191,405,131,406.5Q71,408,55.5,355Q40,302,57,254.5Q74,207,88.5,163Q103,119,161,143.5Q219,168,243.5,133.5Q268,99,322.5,82.5Q377,66,372.5,127Q368,188,390.5,219Q413,250,377,274Z;
+                "
+                >
+                </animate>
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div id="about" class="w-screen h-screen flex justify-center items-center">
+          <div class="sliders w-screen h-screen px-0 md:px-5 flex items-center justify-center" data-id="01">
+            <div class="inner-sliders w-full gap-x-4">
+              <div class="w-full max-w-48">
+                <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                  <defs>
+                    <clipPath id="shape">
+                      <path id="blob" fill="#d1d8e0">
+                        <animate 
+                          attributeName="d"
+                          dur="25000ms"
+                          repeatCount="indefinite"
+                          values="
+                          M377,274Q341,298,360,367.5Q379,437,328,455.5Q277,474,234,439.5Q191,405,131,406.5Q71,408,55.5,355Q40,302,57,254.5Q74,207,88.5,163Q103,119,161,143.5Q219,168,243.5,133.5Q268,99,322.5,82.5Q377,66,372.5,127Q368,188,390.5,219Q413,250,377,274Z;
+                          M419.12076,300.89639Q443.51075,351.79277,417.8526,404.03849Q392.19445,456.2842,330.02992,427.08118Q267.86538,397.87815,219.79059,427.82798Q171.7158,457.77781,150.2842,407.51496Q128.8526,357.2521,94.57588,327.08866Q60.29916,296.92521,89.98613,257.54487Q119.67311,218.16454,98.1421,157.41773Q76.61109,96.67092,133.59614,94.27454Q190.58118,91.87815,228.78311,100.00639Q266.98504,108.13462,296.11109,124.11328Q325.23714,140.09193,365.39529,154.40386Q405.55344,168.7158,400.1421,209.3579Q394.73076,250,419.12076,300.89639Z;
+                          M361.5,276.5Q351,303,354.5,355Q358,407,315,417.5Q272,428,231,418Q190,408,140.5,399.5Q91,391,64.5,346.5Q38,302,48,252.5Q58,203,122,198Q186,193,179.5,120.5Q173,48,223.5,48Q274,48,333,46Q392,44,364.5,124.5Q337,205,354.5,227.5Q372,250,361.5,276.5Z;
+                          M440,303.5Q454,357,423,406Q392,455,326.5,400Q261,345,224,380.5Q187,416,187,361Q187,306,178,288Q169,270,166.5,249.5Q164,229,137,177.5Q110,126,149,106.5Q188,87,228.5,92.5Q269,98,287,134Q305,170,344,175Q383,180,404.5,215Q426,250,440,303.5Z;
+                          M377,274Q341,298,360,367.5Q379,437,328,455.5Q277,474,234,439.5Q191,405,131,406.5Q71,408,55.5,355Q40,302,57,254.5Q74,207,88.5,163Q103,119,161,143.5Q219,168,243.5,133.5Q268,99,322.5,82.5Q377,66,372.5,127Q368,188,390.5,219Q413,250,377,274Z;
+                          "
+                          >
+                      </path>
+                    </clipPath>
+                  </defs>
+                  <image x="0" y="0" class="w-full max-w-20 h-auto object-cover" clip-path="url(#shape)" xlink:href="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&amp;w=1887&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" preserveAspectRatio="none"></image>
+                </svg>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div id="work" class="w-screen h-screen flex justify-center items-center">Hi ` Hello - Work</div>
+      <div id="service" class="w-screen h-screen flex justify-center items-center">Hi ` Hello - Services</div>
+      <div id="pricing" class="w-screen h-screen flex justify-center items-center">Hi ` Hello - Pricing</div>
+      <div id="testimonials" class="w-screen h-screen flex justify-center items-center">Hi ` Hello - Testimonials</div>
+    </main>
+    <footer>
+  
+    </footer>
+    
+    <script src="./src/style_v1.js"></script>
+  </div>
+  <!-- Google tag (gtag.js) -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-TY4T56KN0G"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-TY4T56KN0G');
-</script>
+    gtag('config', 'G-TY4T56KN0G');
+  </script> -->
   </body>
 </html>
