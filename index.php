@@ -402,7 +402,18 @@
                   </div>
                 </div>
                 <div id="pricingChanger" class="w-full flex items-center justify-center relative bg-q_background_clr/50 backdrop-blur-lg p-4" style="z-index: 100000;">
-                  <strong class="list-none py-2 rounded-full text-sm font-semibold tracking-wider px-4 bg-q_surface_clr border-gradient hover:bg-transparent hover:text-black cursor-pointer transition-all star">Web Development</strong>
+                  <a href="./#pricingPreview">
+                    <strong class="list-none py-2 rounded-full text-sm font-semibold tracking-wider px-4 bg-q_surface_clr border-gradient">Web Development</strong>
+                  </a>
+                  <a href="./pricing#branding">
+                    <strong class="list-none py-2 rounded-full text-sm font-semibold tracking-wider px-4 bg-q_surface_clr border-gradient hover:bg-transparent hover:text-black cursor-pointer transition-all star">Branding</strong>
+                  </a>
+                  <a href="./pricing#graphicdesign">
+                    <strong class="list-none py-2 rounded-full text-sm font-semibold tracking-wider px-4 bg-q_surface_clr border-gradient hover:bg-transparent hover:text-black cursor-pointer transition-all star">Graphic Design</strong>
+                  </a>
+                  <a href="./pricing#seo&sem">
+                    <strong class="list-none py-2 rounded-full text-sm font-semibold tracking-wider px-4 bg-q_surface_clr border-gradient hover:bg-transparent hover:text-black cursor-pointer transition-all star">Seo</strong>
+                  </a>
                 </div>
               </div>
             </div>
