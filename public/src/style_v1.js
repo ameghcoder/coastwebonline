@@ -1,3 +1,23 @@
+function send(url, data){
+    return new Promise((res, rej) => {
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", url, true);
+        xhr.setRequestHeader("x-csrf-token", document.querySelector("meta[name='csrf-token']").getAttribute('content'));
+        xhr.onreadystatechange = () => {
+            if(xhr.readyState == 4 && xhr.status == 200){
+                res(xhr.responseText);
+            } else if(xhr.status == 500){
+                showMsg("e", "Internal Server Error - Reload Page")
+                rej(false);
+            }
+        }
+        xhr.onerror = (e) => {
+            showMsg("e", "Something went wrong - Try Again Later");
+            rej(false);
+        }
+        xhr.send(data);
+    })
+}
 const init = () => {
     const [windowWidth, windowHeight] = [window.innerWidth, window.innerHeight];
 
@@ -16,7 +36,7 @@ const init = () => {
             }
             textSlider.style.transform = `translateY(-${tempTransYHei}px)`;
             tempSlideCountResetter++;
-        }, 3000)
+        }, 1000)
     }()
 
     // duplicate elements
@@ -125,6 +145,36 @@ const init = () => {
         imgModelUrl.setAttribute("src", "#");
         imgModel.classList.add("hidden");
         imgModel.classList.remove("flex");
+    })
+
+    // send form details
+    const sendButton = document.getElementById("sendForm");
+    sendButton && sendButton.addEventListener("click", ()=>{
+        // const custName = document.getElementById("cust_name");
+        // const custEmail = document.getElementById("cust_email");
+        // const custCountry = document.getElementById("cust_name");
+        // const custName = document.getElementById("cust_name");
+        // const custName = document.getElementById("cust_name");
+        // const custName = document.getElementById("cust_name");
+        // const custName = document.getElementById("cust_name");
+        send("/api/submit", formData).then((r) => {
+            let respJsn = checkJson(r);
+            if(respJsn){
+                showMsg(respJsn['flag'], respJsn['msg']);
+                if(respJsn['flag'] == 's'){
+                    document.getElementById("popupCongrat").classList.add("flex");
+                    document.getElementById("popupCongrat").classList.remove("hidden");
+                    countDownForResendEmail();
+                }
+                resendButton();
+            } else{
+                showMsg("e", "Something goes wrong - Try again Later");
+                console.log("F-T-Side Error");
+            }
+        }).catch((e) => {
+            showMsg("e", "Something goes wrong - Try again later");
+            console.log("F-C-Side Error");
+        })
     })
 }
 document.readyState === "interactive" ? init() : document.addEventListener('DOMContentLoaded', init);

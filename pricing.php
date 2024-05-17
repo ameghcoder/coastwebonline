@@ -72,9 +72,9 @@
               </div>
               <div class="overflow-hidden bg-q_background_clr border border-q_br_clr shadow-inner rounded-md w-full">
                 <div id="pricingPreview" class="z-50 relative px-4 py-8 glide1">
-                  <div class="w-full h-auto min-h-40 glide__track" data-glide-el="track">
+                  <div class="w-full h-auto min-h-40 glide__track overflow-x-auto" data-glide-el="track">
                     <div class="glide__slides flex gap-x-4 justify-center items-start">
-                        <div class="glide__slide price-container z-50 w-80 inline-flex flex-col rounded-lg bg-q_surface_clr/50 backdrop-blur-lg shadow-md relative overflow-hidden">
+                        <div class="glide__slide min-w-80 price-container z-50 w-80 inline-flex flex-col rounded-lg bg-q_surface_clr/50 backdrop-blur-lg shadow-md relative overflow-hidden">
                           <h2 class="font-semibold text-xl w-full bg-q_primary_clr text-black p-4 text-center backdrop-blur-sm my-0">Basic</h2>
                           <div class="flex flex-col items-center gap-2 p-2">
                               <h2 class="font-semibold">Starter Plan</h2>
@@ -119,7 +119,7 @@
                               </div>
                           </div>
                         </div>
-                        <div class="glide__slide price-container z-50 w-80 inline-flex flex-col rounded-lg bg-q_surface_clr/50 backdrop-blur-lg shadow-md relative overflow-hidden">
+                        <div class="glide__slide min-w-80 price-container z-50 w-80 inline-flex flex-col rounded-lg bg-q_surface_clr/50 backdrop-blur-lg shadow-md relative overflow-hidden">
                           <h2 class="font-semibold text-xl w-full bg-q_primary_clr text-black p-4 text-center backdrop-blur-sm my-0">Most Popular</h2>
                           <div class="flex flex-col items-center gap-2 p-2">
                               <h2 class="font-semibold">Popular Plan</h2>
@@ -165,7 +165,7 @@
                               </div>
                           </div>
                         </div>
-                        <div class="glide__slide price-container z-50 w-80 inline-flex flex-col rounded-lg bg-q_surface_clr/50 backdrop-blur-lg shadow-md relative overflow-hidden">
+                        <div class="glide__slide min-w-80 price-container z-50 w-80 inline-flex flex-col rounded-lg bg-q_surface_clr/50 backdrop-blur-lg shadow-md relative overflow-hidden">
                           <h2 class="font-semibold text-xl w-full bg-q_primary_clr text-black p-4 text-center backdrop-blur-sm my-0">Professional</h2>
                           <div class="flex flex-col items-center gap-2 p-2">
                               <h2 class="font-semibold">Professional Plan</h2>
@@ -230,9 +230,9 @@
               </div>
               <div class="overflow-hidden bg-q_background_clr border border-q_br_clr shadow-inner rounded-md w-full">
                 <div id="pricingPreview" class="z-50 relative px-4 py-8 glide2">
-                  <div class="w-full h-auto min-h-40 glide__track" data-glide-el="track">
+                  <div class="w-full h-auto min-h-40 glide__track overflow-x-auto" data-glide-el="track">
                     <div class="glide__slides flex gap-x-4 justify-center items-start">
-                        <div class="glide__slide price-container z-50 w-80 inline-flex flex-col rounded-lg bg-q_surface_clr/50 backdrop-blur-lg shadow-md relative overflow-hidden">
+                        <div class="glide__slide min-w-80 price-container z-50 w-80 inline-flex flex-col rounded-lg bg-q_surface_clr/50 backdrop-blur-lg shadow-md relative overflow-hidden">
                           <h2 class="font-semibold text-xl w-full bg-q_primary_clr text-black p-4 text-center backdrop-blur-sm my-0">Basic</h2>
                           <div class="flex flex-col items-center gap-2 p-2">
                               <h2 class="font-semibold">Starter Plan</h2>
@@ -289,7 +289,7 @@
                               </div>
                           </div>
                         </div>
-                        <div class="glide__slide price-container z-50 w-80 inline-flex flex-col rounded-lg bg-q_surface_clr/50 backdrop-blur-lg shadow-md relative overflow-hidden">
+                        <div class="glide__slide min-w-80 price-container z-50 w-80 inline-flex flex-col rounded-lg bg-q_surface_clr/50 backdrop-blur-lg shadow-md relative overflow-hidden">
                           <h2 class="font-semibold text-xl w-full bg-q_primary_clr text-black p-4 text-center backdrop-blur-sm my-0">Most Popular</h2>
                           <div class="flex flex-col items-center gap-2 p-2">
                               <h2 class="font-semibold">Popular Plan</h2>
@@ -354,7 +354,7 @@
                               </div>
                           </div>
                         </div>
-                        <div class="glide__slide price-container z-50 w-80 inline-flex flex-col rounded-lg bg-q_surface_clr/50 backdrop-blur-lg shadow-md relative overflow-hidden">
+                        <div class="glide__slide min-w-80 price-container z-50 w-80 inline-flex flex-col rounded-lg bg-q_surface_clr/50 backdrop-blur-lg shadow-md relative overflow-hidden">
                           <h2 class="font-semibold text-xl w-full bg-q_primary_clr text-black p-4 text-center backdrop-blur-sm my-0">Professional</h2>
                           <div class="flex flex-col items-center gap-2 p-2">
                               <h2 class="font-semibold">Professional Plan</h2>
@@ -426,14 +426,14 @@
             <div class="rounded-md w-full max-w-7xl mx-auto">
               <div class="my-4">
                 <div class="flex gap-4 justify-center">
-                  <strong class="text-heading text-center tracking-wider"><span class="text-q_primary_clr uppercase font-extrabold">Graphic & Logo Design</span></strong>
+                  <strong class="text-heading text-center tracking-wider"><span class="text-q_primary_clr uppercase font-extrabold">Graphic Design</span></strong>
                 </div>
               </div>
               <div class="overflow-hidden bg-q_background_clr border border-q_br_clr shadow-inner rounded-md w-full">
                 <div id="pricingPreview" class="z-50 relative px-4 py-8 glide4">
-                  <div class="w-full h-auto min-h-40 glide__track" data-glide-el="track">
+                  <div class="w-full h-auto min-h-40 glide__track overflow-x-auto" data-glide-el="track">
                     <div class="glide__slides flex gap-x-4 justify-center items-start">
-                        <div class="glide__slide price-container z-50 w-80 inline-flex flex-col rounded-lg bg-q_surface_clr/50 backdrop-blur-lg shadow-md relative overflow-hidden">
+                        <div class="glide__slide min-w-80 price-container z-50 w-80 inline-flex flex-col rounded-lg bg-q_surface_clr/50 backdrop-blur-lg shadow-md relative overflow-hidden">
                           <h2 class="font-semibold text-xl w-full bg-q_primary_clr text-black p-4 text-center backdrop-blur-sm my-0">Basic</h2>
                           <div class="flex flex-col items-center gap-2 p-2">
                               <h2 class="font-semibold">Starter Plan</h2>
@@ -474,7 +474,7 @@
                               </div>
                           </div>
                         </div>
-                        <div class="glide__slide price-container z-50 w-80 inline-flex flex-col rounded-lg bg-q_surface_clr/50 backdrop-blur-lg shadow-md relative overflow-hidden">
+                        <div class="glide__slide min-w-80 price-container z-50 w-80 inline-flex flex-col rounded-lg bg-q_surface_clr/50 backdrop-blur-lg shadow-md relative overflow-hidden">
                           <h2 class="font-semibold text-xl w-full bg-q_primary_clr text-black p-4 text-center backdrop-blur-sm my-0">Most Popular</h2>
                           <div class="flex flex-col items-center gap-2 p-2">
                               <h2 class="font-semibold">Popular Plan</h2>
@@ -515,7 +515,7 @@
                               </div>
                           </div>
                         </div>
-                        <div class="glide__slide price-container z-50 w-80 inline-flex flex-col rounded-lg bg-q_surface_clr/50 backdrop-blur-lg shadow-md relative overflow-hidden">
+                        <div class="glide__slide min-w-80 price-container z-50 w-80 inline-flex flex-col rounded-lg bg-q_surface_clr/50 backdrop-blur-lg shadow-md relative overflow-hidden">
                           <h2 class="font-semibold text-xl w-full bg-q_primary_clr text-black p-4 text-center backdrop-blur-sm my-0">Professional</h2>
                           <div class="flex flex-col items-center gap-2 p-2">
                               <h2 class="font-semibold">Professional Plan</h2>
@@ -576,9 +576,9 @@
               </div>
               <div class="overflow-hidden bg-q_background_clr border border-q_br_clr shadow-inner rounded-md w-full">
                 <div id="pricingPreview" class="z-50 relative px-4 py-8 glide5">
-                  <div class="w-full h-auto min-h-40 glide__track" data-glide-el="track">
+                  <div class="w-full h-auto min-h-40 glide__track overflow-x-auto" data-glide-el="track">
                     <div class="glide__slides flex gap-x-4 justify-center items-start">
-                        <div class="glide__slide price-container z-50 w-80 inline-flex flex-col rounded-lg bg-q_surface_clr/50 backdrop-blur-lg shadow-md relative overflow-hidden">
+                        <div class="glide__slide min-w-80 price-container z-50 w-80 inline-flex flex-col rounded-lg bg-q_surface_clr/50 backdrop-blur-lg shadow-md relative overflow-hidden">
                           <h2 class="font-semibold text-xl w-full bg-q_primary_clr text-black p-4 text-center backdrop-blur-sm my-0">Basic</h2>
                           <div class="flex flex-col items-center gap-2 p-2">
                               <h2 class="font-semibold">Starter Plan</h2>
@@ -623,7 +623,7 @@
                               </div>
                           </div>
                         </div>
-                        <div class="glide__slide price-container z-50 w-80 inline-flex flex-col rounded-lg bg-q_surface_clr/50 backdrop-blur-lg shadow-md relative overflow-hidden">
+                        <div class="glide__slide min-w-80 price-container z-50 w-80 inline-flex flex-col rounded-lg bg-q_surface_clr/50 backdrop-blur-lg shadow-md relative overflow-hidden">
                           <h2 class="font-semibold text-xl w-full bg-q_primary_clr text-black p-4 text-center backdrop-blur-sm my-0">Most Popular</h2>
                           <div class="flex flex-col items-center gap-2 p-2">
                               <h2 class="font-semibold">Popular Plan</h2>
@@ -668,7 +668,7 @@
                               </div>
                           </div>
                         </div>
-                        <div class="glide__slide price-container z-50 w-80 inline-flex flex-col rounded-lg bg-q_surface_clr/50 backdrop-blur-lg shadow-md relative overflow-hidden">
+                        <div class="glide__slide min-w-80 price-container z-50 w-80 inline-flex flex-col rounded-lg bg-q_surface_clr/50 backdrop-blur-lg shadow-md relative overflow-hidden">
                           <h2 class="font-semibold text-xl w-full bg-q_primary_clr text-black p-4 text-center backdrop-blur-sm my-0">Professional</h2>
                           <div class="flex flex-col items-center gap-2 p-2">
                               <h2 class="font-semibold">Professional Plan</h2>
@@ -753,32 +753,8 @@
     </div>
     
     <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/public/components/footer.php') ?>
-    <script src="https://unpkg.com/@glidejs/glide"></script>
     <script src="./public/src/style_v1.js"></script>
-    <script>
-      const glideOption = {
-        type: 'slider',
-        // autoplay: 2000,
-        hoverpause: true,
-        startAt: 1,
-        focusAt: 1,
-        perView: 3,
-        breakpoints: {
-          900: {
-            perView: 1,
-            focusAt: 0
-          }
-        },
-        peek:{
-          before: 20,
-          after: 40
-        }
-      };
-      new Glide(".glide1", glideOption).mount();
-      new Glide(".glide2", glideOption).mount();
-      new Glide(".glide4", glideOption).mount();
-      new Glide(".glide5", glideOption).mount();
-    </script>
+
   </div>
   
   </body>

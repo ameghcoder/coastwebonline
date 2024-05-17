@@ -13,9 +13,9 @@
         <p class="text-center">
           <strong class="para-txt-default text-xl sm:text-2xl md:text-4xl">Want to join our team?</strong>
           <br>
-          <span class="mt-4 inline-flex">Simply Fill the form and send your resume to us</span>
+          <span class="mt-4 inline-flex">Simply send your resume and details to us through Email</span>
         </p>
-        <a href="#" class="px-6 py-2 border-2 border-q_br_clr shadow-md rounded-full bg-q_primary_clr hover:scale-95 transition-all tracking-widest text-xl" style="background-image: linear-gradient(180deg, #1b434f, transparent);">
+        <a href="mailto:contact@coastweb.online" class="px-6 py-2 border-2 border-q_br_clr shadow-md rounded-full bg-q_primary_clr hover:scale-95 transition-all tracking-widest text-xl" style="background-image: linear-gradient(180deg, #1b434f, transparent);">
           <span class="text-white ">Join Our Team</span>
           <span class="small-icon right-arrow -rotate-45" style="filter: invert(1); transform: translateY(5px) rotate(-45deg);"></span>
         </a>
@@ -23,16 +23,6 @@
     </div>
   </div>
   <div class="w-full max-w-7xl mx-auto flex flex-col gap-4">
-    <!-- form -->
-    <div class="w-full mx-auto">
-      <strong class="para-txt-default">Get Latest Updates !</strong>
-      <form action="" class="relative w-full">
-        <input class="w-full p-4 rounded-md bg-q_surface_clr shadow-md border border-q_br_clr text-xl placeholder:text-q_tx_clr/50 outline-none focus:border-q_secondary_2_clr" type="email" placeholder="where we can hit your inbox!">
-        <button title="subscribe" type="button" class="absolute w-16 flex items-center justify-center h-full right-0 top-0">
-          <span class="send icon opacity-50"></span>
-        </button>
-      </form>
-    </div>
     <!-- navigation -->
     <div class="flex justify-between gap-4 flex-col sm:flex-row">
       <div class="w-full max-w-none sm:max-w-sm text-center sm:text-left">

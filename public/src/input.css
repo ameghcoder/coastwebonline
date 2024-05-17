@@ -267,9 +267,9 @@
   .infinity-slider-container{
     position: relative;
   }
-  .infinity-slider-container:hover .inf_slider{
+  /* .infinity-slider-container:hover .inf_slider{
     animation-play-state: paused;
-  }
+  } */
   .infinity-slider-container::before{
     content: '';
     box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.5);

@@ -727,9 +727,9 @@ span.gototop{
   position: relative;
 }
 
-.infinity-slider-container:hover .inf_slider{
-  animation-play-state: paused;
-}
+/* .infinity-slider-container:hover .inf_slider{
+    animation-play-state: paused;
+  } */
 
 .infinity-slider-container::before{
   content: '';
@@ -1325,6 +1325,10 @@ span.gototop{
   width: 20rem;
 }
 
+.w-\[calc\(100\%-24px\)\] {
+  width: calc(100% - 24px);
+}
+
 .w-auto {
   width: auto;
 }
@@ -1337,8 +1341,8 @@ span.gototop{
   width: 100vw;
 }
 
-.w-\[100\%-24px\] {
-  width: 100%-24px;
+.min-w-80 {
+  min-width: 20rem;
 }
 
 .max-w-12 {
@@ -1472,8 +1476,16 @@ span.gototop{
   row-gap: 0.5rem;
 }
 
+.gap-y-8 {
+  row-gap: 2rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
 }
 
 .scroll-smooth {
@@ -1571,6 +1583,10 @@ span.gototop{
   background-color: rgb(var(--tx-clr) / 0.75);
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1599,6 +1615,11 @@ span.gototop{
 
 .p-8 {
   padding: 2rem;
+}
+
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .px-10 {
