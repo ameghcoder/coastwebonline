@@ -51,25 +51,6 @@ const init = () => {
         ele.insertAdjacentHTML('beforeend', _2duplic);
     })
 
-    // hover expand
-    if(document.querySelectorAll(".openOnHover")){
-        const openOnHover = document.querySelectorAll(".openOnHover");
-        const oohContainer = document.querySelectorAll(".oohContainer");
-        for(let i = 0; i < openOnHover.length; i++){
-            openOnHover[i].addEventListener("mouseover", () => {
-                if(openOnHover[i].getAttribute('data-id') == oohContainer[i].getAttribute('data-id')){
-                    oohContainer[i].style.height = "auto";
-                }
-            })
-            openOnHover[i].addEventListener("mouseleave", () => {
-                if(openOnHover[i].getAttribute('data-id') == oohContainer[i].getAttribute('data-id')){
-                    oohContainer[i].style.height = "0px";
-                }
-            })
-            
-        }
-    }
-
     // hover
     const hamburger = document.getElementById("hamburger");
     const hamburgerLineId = document.getElementById("hamburger-line");

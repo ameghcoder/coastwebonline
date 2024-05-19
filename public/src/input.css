@@ -273,12 +273,12 @@
   .infinity-slider-container::before{
     content: '';
     box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.5);
-    @apply absolute top-0 left-0 w-5 h-full z-10 bg-q_background_clr;
+    @apply absolute top-0 left-0 w-1 h-full z-10 bg-q_background_clr;
   }
   .infinity-slider-container::after{
     content: '';
     box-shadow: -5px 0px 10px 0px rgba(0, 0, 0, 0.5);
-    @apply absolute top-0 right-0 w-5 h-full z-10 bg-q_background_clr;
+    @apply absolute top-0 right-0 w-1 h-full z-10 bg-q_background_clr;
   }
   /* infinity slider animation */
   @keyframes infinitySlider {
@@ -410,5 +410,13 @@
   }
   .active__selected--box > span{
     @apply inline-block;
+  }
+
+  /* summary marker */
+  details > summary {
+    list-style: none;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
   }
 }

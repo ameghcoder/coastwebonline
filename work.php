@@ -3,38 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./public/src/output.css" />
-  <!-- favicon -->
-  <link
-    rel="apple-touch-icon"
-    sizes="180x180"
-    href="./public/assets/apple-touch-icon.png"
-  />
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="32x32"
-    href="./public/assets/favicon-32x32.png"
-  />
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="16x16"
-    href="./public/assets/favicon-16x16.png"
-  />
-  <link rel="manifest" href="/site.webmanifest" />
-  <link
-    rel="mask-icon"
-    href="./public/assets/safari-pinned-tab.svg"
-    color="#01b9ef"
-  />
-  <meta name="apple-mobile-web-app-title" content="Coast Web Online" />
-  <meta name="application-name" content="Coast Web Online" />
-  <meta name="msapplication-TileColor" content="#01b9ef" />
-  <meta name="theme-color" content="#01b9ef" />
+  <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/public/components/headLink.php') ?>
   <title>Our Work</title>
 </head>
 
@@ -224,39 +193,7 @@
     </div>
     
     <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/public/components/footer.php') ?>
-    <script src="https://unpkg.com/@glidejs/glide"></script>
-    <script>
-      const glide = new Glide(".glide", {
-        type: 'carousel',
-        startAt: 1,
-        perView: 5,
-        focusAt: 'center',
-        hoverpause: true,
-        autoplay: 2000,
-        keyboard: true,
-        animationDuraton: 800,
-        animationTimingFunc: 'cubic-bezier(0.680, -0.550, 0.265, 1.550)',
-        breakpoints: {
-            1000: {
-                perView: 3
-            },
-            600: {
-                perView: 1
-            }
-        },
-      });
-      glide.mount();
-    </script>
-    <script src="./public/src/style_v1.js"></script>
+   
   </div>
-  <!-- Google tag (gtag.js) -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-TY4T56KN0G"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-TY4T56KN0G');
-  </script> -->
   </body>
 </html>
