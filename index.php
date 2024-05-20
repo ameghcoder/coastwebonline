@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/public/components/headLink.php') ?>
+  <?php include_once ($_SERVER['DOCUMENT_ROOT'] . '/public/components/headLink.php') ?>
   <title>Build Your Own Website - Made by Professionals</title>
 </head>
+
 <body data-theme="light">
   <div class="relative">
-    <?php include_once($_SERVER['DOCUMENT_ROOT'] . "/public/components/header.php") ?>
+    <?php include_once ($_SERVER['DOCUMENT_ROOT'] . "/public/components/header.php") ?>
     <main class="w-screen">
       <div id="home" class="w-screen h-screen p-4 flex flex-col gap-2 justify-center relative">
         <div class="flex gap-2 justify-start px-2 md:px-4 lg:px-8 w-full max-w-7xl mx-auto">
@@ -16,11 +18,15 @@
             <strong class="text-4xl md:text-7xl">Simple Solutions</strong>
             <strong class="text-4xl md:text-7xl">Powerful Results</strong>
             <h2 class="font-semibold text-2xl md:text-4xl para-txt-default">Make Your Brand Online</h2>
-            <a href="#contactForm" class="w-full max-w-40 relative bg-q_primary_clr rounded-s-full rounded-e-full hover:rounded-e-none transition-all px-4 py-2 group shadow-lg" type="button">
+            <a href="#contactForm"
+              class="w-full max-w-40 relative bg-q_primary_clr rounded-s-full rounded-e-full hover:rounded-e-none transition-all px-4 py-2 group shadow-lg"
+              type="button">
               <span class="z-10 text-xl font-semibold tracking-wider text-q_background_clr">
                 Say Hello !
               </span>
-              <span class="absolute -z-10 top-0 right-0 flex invisible group-hover:-right-12 group-hover:visible w-11 h-11 bg-q_primary_clr rounded-e-full items-center justify-center transition-all animate-pulse" style="padding: 6px 0;">
+              <span
+                class="absolute -z-10 top-0 right-0 flex invisible group-hover:-right-12 group-hover:visible w-11 h-11 bg-q_primary_clr rounded-e-full items-center justify-center transition-all animate-pulse"
+                style="padding: 6px 0;">
                 <span class="small-icon right-arrow"></span>
               </span>
             </a>
@@ -42,73 +48,108 @@
         <div id="about" class="w-full h-auto flex justify-center items-center p-1 md:p-4 relative">
           <div class="w-full max-w-7xl mx-auto">
             <div>
-                <strong class="text-heading-small">Our Team</strong>
-                <div class="flex gap-2 justify-between flex-col md:flex-row">
-                  <strong class="text-heading text-left tracking-wider">Expert <span class="text-q_primary_clr">Team</span><br>Pro <span class="text-q_primary_clr">Results</span></strong>
-                  <p class="w-full max-w-xl py-1 md:px-4 para-txt-default">Our skilled team always gives their best, so you can count on top-notch results. Trust us to get the job done right, every time.</p>
-                </div>
-                <div class="infinity-slider-container w-full px-10 py-4 overflow-hidden whitespace-nowrap">
-                  <div class="inline-block h-52 logo-slide inf_slider">
-                    <div class="relative mx-4 inline-block w-52 h-52 group">
-                      <div class="absolute w-52 h-52 shadow-md transition-all">
-                        <img src="./public/assets/Backend_Developer.jpg" class="w-full h-full object-cover transition-all" alt="teams member image">
-                        <span class="absolute -bottom-1 -left-1 w-full z-20">
-                            <span class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">Backend Developer</span>
-                        </span>
-                        <span class="absolute -bottom-1 -right-1 w-full -z-10 text-right group-hover:-bottom-6 transition-all">
-                            <span class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">Bharat Sharama</span>
-                        </span>
-                      </div>
+              <strong class="text-heading-small">Our Team</strong>
+              <div class="flex gap-2 justify-between flex-col md:flex-row">
+                <strong class="text-heading text-left tracking-wider">Expert <span
+                    class="text-q_primary_clr">Team</span><br>Pro <span
+                    class="text-q_primary_clr">Results</span></strong>
+                <p class="w-full max-w-xl py-1 md:px-4 para-txt-default">Our skilled team always gives their best, so
+                  you can count on top-notch results. Trust us to get the job done right, every time.</p>
+              </div>
+              <div class="infinity-slider-container w-full px-10 py-4 overflow-hidden whitespace-nowrap">
+                <div class="inline-block h-52 logo-slide inf_slider">
+                  <div class="relative mx-4 inline-block w-52 h-52 group">
+                    <div class="absolute w-52 h-52 shadow-md transition-all">
+                      <img src="./public/assets/Backend_Developer.jpg" class="w-full h-full object-cover transition-all"
+                        alt="teams member image">
+                      <span class="absolute -bottom-1 -left-1 w-full z-20">
+                        <span
+                          class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">Backend
+                          Developer</span>
+                      </span>
+                      <span
+                        class="absolute -bottom-1 -right-1 w-full -z-10 text-right group-hover:-bottom-6 transition-all">
+                        <span
+                          class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">Bharat
+                          Sharama</span>
+                      </span>
                     </div>
-                    <div class="relative mx-4 inline-block w-52 h-52 group">
-                      <div class="absolute w-52 h-52 shadow-md transition-all">
-                        <img src="./public/assets/Frontend_Developer.jpg" class="w-full h-full object-cover transition-all" alt="teams member image">
-                        <span class="absolute -bottom-1 -left-1 w-full z-20">
-                            <span class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">Frontend Developer</span>
-                        </span>
-                        <span class="absolute -bottom-1 -right-1 w-full -z-10 text-right group-hover:-bottom-6 transition-all">
-                            <span class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">Ankit Yadav</span>
-                        </span>
-                      </div>
+                  </div>
+                  <div class="relative mx-4 inline-block w-52 h-52 group">
+                    <div class="absolute w-52 h-52 shadow-md transition-all">
+                      <img src="./public/assets/Frontend_Developer.jpg"
+                        class="w-full h-full object-cover transition-all" alt="teams member image">
+                      <span class="absolute -bottom-1 -left-1 w-full z-20">
+                        <span
+                          class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">Frontend
+                          Developer</span>
+                      </span>
+                      <span
+                        class="absolute -bottom-1 -right-1 w-full -z-10 text-right group-hover:-bottom-6 transition-all">
+                        <span
+                          class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">Ankit
+                          Yadav</span>
+                      </span>
                     </div>
-                    <div class="relative mx-4 inline-block w-52 h-52 group">
-                      <div class="absolute w-52 h-52 shadow-md transition-all">
-                        <span class="absolute z-50 w-8 h-8 rounded-md flex items-center justify-center top-2 right-2 hover:scale-110">
-                          <a href="https://www.linkedin.com/in/yrjdeveloper/"><span class="small-icon linkedIn"></span></a>
-                        </span>
-                        <img src="./public/assets/FullStack_Developer.jpg" class="w-full h-full object-cover transition-all" alt="teams member image">
-                        <span class="absolute -bottom-1 -left-1 w-full z-20">
-                            <span class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">FullStack Developer</span>
-                        </span>
-                        <span class="absolute -bottom-1 -right-1 w-full -z-10 text-right group-hover:-bottom-6 transition-all">
-                            <span class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">Yashraj (FO & CEO)</span>
-                        </span>
-                      </div>
-                    </div>     
-                    <div class="relative mx-4 inline-block w-52 h-52 group">
-                      <div class="absolute w-52 h-52 shadow-md transition-all">
-                        <img src="./public/assets/SEO_Expert.jpg" class="w-full h-full object-cover transition-all" alt="teams member image">
-                        <span class="absolute -bottom-1 -left-1 w-full z-20">
-                            <span class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">SEO, SMM Expert</span>
-                        </span>
-                        <span class="absolute -bottom-1 -right-1 w-full -z-10 text-right group-hover:-bottom-6 transition-all">
-                            <span class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">Shubham Sharma</span>
-                        </span>
-                      </div>
+                  </div>
+                  <div class="relative mx-4 inline-block w-52 h-52 group">
+                    <div class="absolute w-52 h-52 shadow-md transition-all">
+                      <span
+                        class="absolute z-50 w-8 h-8 rounded-md flex items-center justify-center top-2 right-2 hover:scale-110">
+                        <a href="https://www.linkedin.com/in/yrjdeveloper/"><span
+                            class="small-icon linkedIn"></span></a>
+                      </span>
+                      <img src="./public/assets/FullStack_Developer.jpg"
+                        class="w-full h-full object-cover transition-all" alt="teams member image">
+                      <span class="absolute -bottom-1 -left-1 w-full z-20">
+                        <span
+                          class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">FullStack
+                          Developer</span>
+                      </span>
+                      <span
+                        class="absolute -bottom-1 -right-1 w-full -z-10 text-right group-hover:-bottom-6 transition-all">
+                        <span
+                          class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">Yashraj
+                          (FO & CEO)</span>
+                      </span>
                     </div>
-                    <div class="relative mx-4 inline-block w-52 h-52 group">
-                      <div class="absolute w-52 h-52 shadow-md transition-all">
-                        <img src="./public/assets/Social_Media_Expert.jpg" class="w-full h-full object-cover transition-all" alt="teams member image">
-                        <span class="absolute -bottom-1 -left-1 w-full z-20">
-                            <span class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">SMM Expert</span>
-                        </span>
-                        <span class="absolute -bottom-1 -right-1 w-full -z-10 text-right group-hover:-bottom-6 transition-all">
-                            <span class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">Sagar Mehra</span>
-                        </span>
-                      </div>
-                    </div>                  
+                  </div>
+                  <div class="relative mx-4 inline-block w-52 h-52 group">
+                    <div class="absolute w-52 h-52 shadow-md transition-all">
+                      <img src="./public/assets/SEO_Expert.jpg" class="w-full h-full object-cover transition-all"
+                        alt="teams member image">
+                      <span class="absolute -bottom-1 -left-1 w-full z-20">
+                        <span
+                          class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">SEO,
+                          SMM Expert</span>
+                      </span>
+                      <span
+                        class="absolute -bottom-1 -right-1 w-full -z-10 text-right group-hover:-bottom-6 transition-all">
+                        <span
+                          class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">Shubham
+                          Sharma</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="relative mx-4 inline-block w-52 h-52 group">
+                    <div class="absolute w-52 h-52 shadow-md transition-all">
+                      <img src="./public/assets/Social_Media_Expert.jpg"
+                        class="w-full h-full object-cover transition-all" alt="teams member image">
+                      <span class="absolute -bottom-1 -left-1 w-full z-20">
+                        <span
+                          class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">SMM
+                          Expert</span>
+                      </span>
+                      <span
+                        class="absolute -bottom-1 -right-1 w-full -z-10 text-right group-hover:-bottom-6 transition-all">
+                        <span
+                          class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">Sagar
+                          Mehra</span>
+                      </span>
+                    </div>
                   </div>
                 </div>
+              </div>
             </div>
           </div>
         </div>
@@ -116,8 +157,11 @@
           <div class="w-full max-w-7xl mx-auto">
             <strong class="text-heading-small">Our Services</strong>
             <div class="flex gap-4 justify-between flex-col md:flex-row">
-              <strong class="text-heading text-left tracking-wider">What <span class="text-q_primary_clr">Services</span><br>We're Offering</strong>
-              <p class="w-full max-w-xl py-1 md:px-4 para-txt-default">we offer services that can help business improve their visibility and business reputation online, expand market reach, and increase turnover through effective digital strategies. Following are the services we provide</p>
+              <strong class="text-heading text-left tracking-wider">What <span
+                  class="text-q_primary_clr">Services</span><br>We're Offering</strong>
+              <p class="w-full max-w-xl py-1 md:px-4 para-txt-default">we offer services that can help business improve
+                their visibility and business reputation online, expand market reach, and increase turnover through
+                effective digital strategies. Following are the services we provide</p>
             </div>
             <div class="p-2 mt-6 flex flex-col gap-2">
               <div>
@@ -130,7 +174,8 @@
                   </summary>
                   <div class="bg-q_surface_clr">
                     <p class="p-2 md:p-4 para-txt-default">
-                    Elevate your brand with us. From concept to creation, we will create a unique identity that resonates. Let's create your story together.
+                      Elevate your brand with us. From concept to creation, we will create a unique identity that
+                      resonates. Let's create your story together.
                     </p>
                   </div>
                 </details>
@@ -145,7 +190,9 @@
                   </summary>
                   <div class="bg-q_surface_clr">
                     <p class="p-2 md:p-4 para-txt-default">
-                    Unlock the potential of your online presence with our expert web development and design services. From sleek interfaces to seamless functionality, we'll create a digital experience that will set you apart.
+                      Unlock the potential of your online presence with our expert web development and design services.
+                      From sleek interfaces to seamless functionality, we'll create a digital experience that will set
+                      you apart.
                     </p>
                   </div>
                 </details>
@@ -160,7 +207,9 @@
                   </summary>
                   <div class="bg-q_surface_clr">
                     <p class="p-2 md:p-4 para-txt-default">
-                    Elevate your brand with our expert graphic design service. From logos to branding, we create visual identities that effortlessly capture and communicate your essence. Let's tell your story through design.
+                      Elevate your brand with our expert graphic design service. From logos to branding, we create
+                      visual identities that effortlessly capture and communicate your essence. Let's tell your story
+                      through design.
                     </p>
                   </div>
                 </details>
@@ -175,241 +224,307 @@
                   </summary>
                   <div class="bg-q_surface_clr">
                     <p class="p-2 md:p-4 para-txt-default">
-                    Increase your online visibility with our SEO service. We optimize your website to rank higher on search engines, drive organic traffic and increase your online presence. Let's work together to take your business to the top of search results.
+                      Increase your online visibility with our SEO service. We optimize your website to rank higher on
+                      search engines, drive organic traffic and increase your online presence. Let's work together to
+                      take your business to the top of search results.
                     </p>
                   </div>
                 </details>
               </div>
             </div>
           </div>
-        </div>        
+        </div>
         <div id="pricing" class="w-full h-auto flex justify-center items-center p-1 md:p-4">
           <div class="rounded-md w-full max-w-7xl mx-auto">
             <div>
               <strong class="text-heading-small">Our Pricing</strong>
               <div class="flex gap-4 justify-between flex-col md:flex-row">
-                <strong class="text-heading text-left tracking-wider">Our <span class="text-q_primary_clr">Pricing</span><br>Depends on Services</strong>
-                <p class="w-full max-w-xl py-1 md:px-4 para-txt-default">we offer services that can help business improve their visibility and business reputation online, expand market reach, and increase turnover through effective digital strategies. Following are the services we provide</p>
+                <strong class="text-heading text-left tracking-wider">Our <span
+                    class="text-q_primary_clr">Pricing</span><br>Depends on Services</strong>
+                <p class="w-full max-w-xl py-1 md:px-4 para-txt-default">we offer services that can help business
+                  improve their visibility and business reputation online, expand market reach, and increase turnover
+                  through effective digital strategies. Following are the services we provide</p>
               </div>
             </div>
             <div id="development" class="w-full h-auto flex justify-center items-center p-1 md:p-4 ">
               <div class="rounded-md w-full max-w-7xl mx-auto">
                 <div class="my-4">
                   <div class="flex gap-4 justify-center">
-                    <strong class="text-heading text-center tracking-wider"><span class="text-q_primary_clr uppercase font-extrabold">Web Development</span></strong>
+                    <strong class="text-heading text-center tracking-wider"><span
+                        class="text-q_primary_clr uppercase font-extrabold">Web Development</span></strong>
                   </div>
                 </div>
                 <div class="overflow-x-auto w-full">
                   <div class="flex justify-center gap-4 min-w-[1050px]">
-                    <div class="price-container min-w-80 z-50 w-80 inline-flex flex-col rounded-lg bg-q_surface_clr/50 backdrop-blur-lg shadow-md relative overflow-hidden">
-                        <h2 class="font-semibold text-xl w-full bg-q_primary_clr text-black p-4 text-center backdrop-blur-sm my-0">Basic</h2>
-                        <div class="flex flex-col items-center gap-2 p-2">
-                            <h2 class="font-semibold">Starter Plan</h2>
-                            <p class="text-center para-txt-default text-base font-light">Unlock Your Website's Potential: Elevate with Enhanced Plans!</p>
-                            <span>
-                              <span>₹</span>
-                              <del>9,999</del>
-                              <span class="bg-q_secondary_1_clr/20 px-4 p-2 rounded-full backdrop-blur-sm">Save 60%</span>
-                            </span>
-                            <strong class="text-2xl sm:text-4xl md:text-5xl">
-                              <span class="font-mono text-q_primary_clr">₹</span>
-                              <span class="font-mono text-q_primary_clr">3,999</span>
-                            </strong>
-                            <hr>
-                            <div>
-                              <ul>
-                              <li class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
-                                  <span class="check color-icon"></span>
-                                  <span class="w-[calc(100%-24px)]">Basic website design with simple layout</span>
-                                </li>
-                                <li class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
-                                  <span class="check color-icon"></span>
-                                  <span class="w-[calc(100%-24px)]">Development of a simple website with 5 pages</span>
-                                </li>
-                                <li class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
-                                  <span class="check color-icon"></span>
-                                  <span class="w-[calc(100%-24px)]">Standard features such as contact Form</span>
-                                </li>
-                                <li class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
-                                  <span class="check color-icon"></span>
-                                  <span class="w-[calc(100%-24px)]">Responsive Design for All devices</span>
-                                </li>
-                                <li class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
-                                  <span class="check color-icon"></span>
-                                  <span class="w-[calc(100%-24px)]">Basic SEO optimization</span>
-                                </li>
-                                <li class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
-                                  <span class="check color-icon"></span>
-                                  <span class="w-[calc(100%-24px)]">1 year Basic Hosting Free, After 1 year you have to pay <strong class="font-bold font-mono">₹ 999/year</strong></span>
-                                </li>
-                                <li class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
-                                  <span class="check color-icon"></span>
-                                  <span class="w-[calc(100%-24px)]">Updates & additional pages: Extra charges apply</span>
-                                </li>
-                                <li class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
-                                  <span class="cancel_icon color-icon"></span>
-                                  <span class="w-[calc(100%-24px)]">No CMS integration</span>
-                                </li>
-                                <li class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
-                                  <span class="cancel_icon color-icon"></span>
-                                  <span class="w-[calc(100%-24px)]">No Free Domain</span>
-                                </li>
-                              </ul>
-                            </div>
+                    <div
+                      class="price-container min-w-80 z-50 w-80 inline-flex flex-col rounded-lg bg-q_surface_clr/50 backdrop-blur-lg shadow-md relative overflow-hidden">
+                      <h2
+                        class="font-semibold text-xl w-full bg-q_primary_clr text-black p-4 text-center backdrop-blur-sm my-0">
+                        Basic</h2>
+                      <div class="flex flex-col items-center gap-2 p-2">
+                        <h2 class="font-semibold">Starter Plan</h2>
+                        <p class="text-center para-txt-default text-base font-light">Unlock Your Website's Potential:
+                          Elevate with Enhanced Plans!</p>
+                        <span>
+                          <span>₹</span>
+                          <del>9,999</del>
+                          <span class="bg-q_secondary_1_clr/20 px-4 p-2 rounded-full backdrop-blur-sm">Save 60%</span>
+                        </span>
+                        <strong class="text-2xl sm:text-4xl md:text-5xl">
+                          <span class="font-mono text-q_primary_clr">₹</span>
+                          <span class="font-mono text-q_primary_clr">3,999</span>
+                        </strong>
+                        <hr>
+                        <div>
+                          <ul>
+                            <li
+                              class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
+                              <span class="check color-icon"></span>
+                              <span class="w-[calc(100%-24px)]">Basic website design with simple layout</span>
+                            </li>
+                            <li
+                              class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
+                              <span class="check color-icon"></span>
+                              <span class="w-[calc(100%-24px)]">Development of a simple website with 5 pages</span>
+                            </li>
+                            <li
+                              class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
+                              <span class="check color-icon"></span>
+                              <span class="w-[calc(100%-24px)]">Standard features such as contact Form</span>
+                            </li>
+                            <li
+                              class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
+                              <span class="check color-icon"></span>
+                              <span class="w-[calc(100%-24px)]">Responsive Design for All devices</span>
+                            </li>
+                            <li
+                              class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
+                              <span class="check color-icon"></span>
+                              <span class="w-[calc(100%-24px)]">Basic SEO optimization</span>
+                            </li>
+                            <li
+                              class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
+                              <span class="check color-icon"></span>
+                              <span class="w-[calc(100%-24px)]">1 year Basic Hosting Free, After 1 year you have to pay
+                                <strong class="font-bold font-mono">₹ 999/year</strong></span>
+                            </li>
+                            <li
+                              class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
+                              <span class="check color-icon"></span>
+                              <span class="w-[calc(100%-24px)]">Updates & additional pages: Extra charges apply</span>
+                            </li>
+                            <li
+                              class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
+                              <span class="cancel_icon color-icon"></span>
+                              <span class="w-[calc(100%-24px)]">No CMS integration</span>
+                            </li>
+                            <li
+                              class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
+                              <span class="cancel_icon color-icon"></span>
+                              <span class="w-[calc(100%-24px)]">No Free Domain</span>
+                            </li>
+                          </ul>
                         </div>
-                    </div>
-                    <div class="price-container min-w-80 z-50 w-80 inline-flex flex-col rounded-lg bg-q_surface_clr/50 backdrop-blur-lg shadow-md relative overflow-hidden">
-                      <h2 class="font-semibold text-xl w-full bg-q_primary_clr text-black p-4 text-center backdrop-blur-sm my-0">Most Popular</h2>
-                      <div class="flex flex-col items-center gap-2 p-2">
-                          <h2 class="font-semibold">Popular Plan</h2>
-                          <p class="text-center para-txt-default text-base font-light">Unlock Your Website's Potential: Elevate with Enhanced Plans!</p>
-                          <span>
-                            <span>₹</span>
-                            <del>99,999</del>
-                            <span class="bg-q_secondary_1_clr/20 px-4 p-2 rounded-full backdrop-blur-sm">Save 60%</span>
-                          </span>
-                          <strong class="text-2xl sm:text-4xl md:text-5xl">
-                            <span class="font-mono text-q_primary_clr">₹</span>
-                            <span class="font-mono text-q_primary_clr">39,999</span>
-                          </strong>
-                          <hr>
-                          <div>
-                            <ul>
-                              <li class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
-                                <span class="check color-icon"></span>
-                                <span class="w-[calc(100%-24px)]">Advanced website design with Modern Layout</span>
-                              </li>
-                              <li class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
-                                <span class="check color-icon"></span>
-                                <span class="w-[calc(100%-24px)]">Development of a fully customized website</span>
-                              </li>
-                              <li class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
-                                <span class="check color-icon"></span>
-                                <span class="w-[calc(100%-24px)]">Additional features such as image gallery, blogs</span>
-                              </li>
-                              <li class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
-                                <span class="check color-icon"></span>
-                                <span class="w-[calc(100%-24px)]">Responsive Design for All devices</span>
-                              </li>
-                              <li class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
-                                <span class="check color-icon"></span>
-                                <span class="w-[calc(100%-24px)]">Integration with a CMS for easy content management</span>
-                              </li>
-                              <li class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
-                                <span class="check color-icon"></span>
-                                <span class="w-[calc(100%-24px)]">Enhanced SEO optimization for better search visibility</span>
-                              </li>
-                              <li class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
-                                <span class="check color-icon"></span>
-                                <span class="w-[calc(100%-24px)]">1 year Business Hosting Free, After 1 year you have to pay <strong class="font-bold font-mono">₹ 2,999/year</strong></span>
-                              </li>
-                              <li class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
-                                <span class="check color-icon"></span>
-                                <span class="w-[calc(100%-24px)]">Free Domain for 1st year, After 1st year you have to pay <strong class="font-bold">depends on domain name <span class="font-mono font-bold">₹(6,99 to 4,999)</span></strong></span>
-                              </li>
-                              <li class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
-                                <span class="check color-icon"></span>
-                                <span class="w-[calc(100%-24px)]">Free setup for Google Search Console, Google Analytics</span>
-                              </li>
-                              <li class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
-                                <span class="check color-icon"></span>
-                                <span class="w-[calc(100%-24px)]">Updates & additional pages: Extra charges apply</span>
-                              </li>
-                              <li class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
-                                <span class="cancel_icon color-icon"></span>
-                                <span class="w-[calc(100%-24px)]">No E-commerce website included, Not integrate with Shopify, Wix, Wordpress etc.</span>
-                              </li>
-                            </ul>
-                          </div>
                       </div>
                     </div>
-                    <div class="price-container min-w-80 z-50 w-80 inline-flex flex-col rounded-lg bg-q_surface_clr/50 backdrop-blur-lg shadow-md relative overflow-hidden">
-                      <h2 class="font-semibold text-xl w-full bg-q_primary_clr text-black p-4 text-center backdrop-blur-sm my-0">Professional</h2>
+                    <div
+                      class="price-container min-w-80 z-50 w-80 inline-flex flex-col rounded-lg bg-q_surface_clr/50 backdrop-blur-lg shadow-md relative overflow-hidden">
+                      <h2
+                        class="font-semibold text-xl w-full bg-q_primary_clr text-black p-4 text-center backdrop-blur-sm my-0">
+                        Most Popular</h2>
                       <div class="flex flex-col items-center gap-2 p-2">
-                          <h2 class="font-semibold">Professional Plan</h2>
-                          <p class="text-center para-txt-default text-base font-light">Unlock Your Website's Potential: Elevate with Enhanced Plans!</p>
-                          <span>
-                            <span>₹</span>
-                            <del>1,99,999</del>
-                            <span class="bg-q_secondary_1_clr/20 px-4 p-2 rounded-full backdrop-blur-sm">Save 25%</span>
-                          </span>
-                          <strong class="text-2xl sm:text-4xl md:text-5xl">
-                            <span class="font-mono text-q_primary_clr">₹</span>
-                            <span class="font-mono text-q_primary_clr">1,49,999</span>
-                          </strong>
-                          <hr>
-                          <div>
-                            <ul>
-                              <li class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
-                                <span class="check color-icon"></span>
-                                <span class="w-[calc(100%-24px)]">Premium website design with unique and dynamic elements</span>
-                              </li>
-                              <li class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
-                                <span class="check color-icon"></span>
-                                <span class="w-[calc(100%-24px)]">Development of an advanced website with E-commerce functionality</span>
-                              </li>
-                              <li class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
-                                <span class="check color-icon"></span>
-                                <span class="w-[calc(100%-24px)]">Advanced features such as user accounts, payment gateway</span>
-                              </li>
-                              <li class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
-                                <span class="check color-icon"></span>
-                                <span class="w-[calc(100%-24px)]">Advaned responsive design with fluid layouts</span>
-                              </li>
-                              <li class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
-                                <span class="check color-icon"></span>
-                                <span class="w-[calc(100%-24px)]">Advanced CMS integration with custom modules and plugins (Wix, Wordress etc. / Free), If you integrate Shopify (Shopify Extra charges may apply)</span>
-                              </li>
-                              <li class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
-                                <span class="check color-icon"></span>
-                                <span class="w-[calc(100%-24px)]">Premium SEO optimization for better search and product visibility</span>
-                              </li>
-                              <li class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
-                                <span class="check color-icon"></span>
-                                <span class="w-[calc(100%-24px)]">1 year Cloud Hosting with dedicated resources and support Free, After 1 year you have to pay <br><strong class="font-bold font-mono">₹ 9,999/year</strong></span>
-                              </li>
-                              <li class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
-                                <span class="check color-icon"></span>
-                                <span class="w-[calc(100%-24px)]">Updates & additional pages: Extra charges apply</span>
-                              </li>
-                              <li class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
-                                <span class="check color-icon"></span>
-                                <span class="w-[calc(100%-24px)]">Free setup for Google Search Console, Google Analytics</span>
-                              </li>
-                            </ul>
-                          </div>
+                        <h2 class="font-semibold">Popular Plan</h2>
+                        <p class="text-center para-txt-default text-base font-light">Unlock Your Website's Potential:
+                          Elevate with Enhanced Plans!</p>
+                        <span>
+                          <span>₹</span>
+                          <del>99,999</del>
+                          <span class="bg-q_secondary_1_clr/20 px-4 p-2 rounded-full backdrop-blur-sm">Save 60%</span>
+                        </span>
+                        <strong class="text-2xl sm:text-4xl md:text-5xl">
+                          <span class="font-mono text-q_primary_clr">₹</span>
+                          <span class="font-mono text-q_primary_clr">39,999</span>
+                        </strong>
+                        <hr>
+                        <div>
+                          <ul>
+                            <li
+                              class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
+                              <span class="check color-icon"></span>
+                              <span class="w-[calc(100%-24px)]">Advanced website design with Modern Layout</span>
+                            </li>
+                            <li
+                              class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
+                              <span class="check color-icon"></span>
+                              <span class="w-[calc(100%-24px)]">Development of a fully customized website</span>
+                            </li>
+                            <li
+                              class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
+                              <span class="check color-icon"></span>
+                              <span class="w-[calc(100%-24px)]">Additional features such as image gallery, blogs</span>
+                            </li>
+                            <li
+                              class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
+                              <span class="check color-icon"></span>
+                              <span class="w-[calc(100%-24px)]">Responsive Design for All devices</span>
+                            </li>
+                            <li
+                              class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
+                              <span class="check color-icon"></span>
+                              <span class="w-[calc(100%-24px)]">Integration with a CMS for easy content
+                                management</span>
+                            </li>
+                            <li
+                              class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
+                              <span class="check color-icon"></span>
+                              <span class="w-[calc(100%-24px)]">Enhanced SEO optimization for better search
+                                visibility</span>
+                            </li>
+                            <li
+                              class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
+                              <span class="check color-icon"></span>
+                              <span class="w-[calc(100%-24px)]">1 year Business Hosting Free, After 1 year you have to
+                                pay <strong class="font-bold font-mono">₹ 2,999/year</strong></span>
+                            </li>
+                            <li
+                              class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
+                              <span class="check color-icon"></span>
+                              <span class="w-[calc(100%-24px)]">Free Domain for 1st year, After 1st year you have to pay
+                                <strong class="font-bold">depends on domain name <span
+                                    class="font-mono font-bold">₹(6,99 to 4,999)</span></strong></span>
+                            </li>
+                            <li
+                              class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
+                              <span class="check color-icon"></span>
+                              <span class="w-[calc(100%-24px)]">Free setup for Google Search Console, Google
+                                Analytics</span>
+                            </li>
+                            <li
+                              class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
+                              <span class="check color-icon"></span>
+                              <span class="w-[calc(100%-24px)]">Updates & additional pages: Extra charges apply</span>
+                            </li>
+                            <li
+                              class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
+                              <span class="cancel_icon color-icon"></span>
+                              <span class="w-[calc(100%-24px)]">No E-commerce website included, Not integrate with
+                                Shopify, Wix, Wordpress etc.</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
-                    <div> 
+                    <div
+                      class="price-container min-w-80 z-50 w-80 inline-flex flex-col rounded-lg bg-q_surface_clr/50 backdrop-blur-lg shadow-md relative overflow-hidden">
+                      <h2
+                        class="font-semibold text-xl w-full bg-q_primary_clr text-black p-4 text-center backdrop-blur-sm my-0">
+                        Professional</h2>
+                      <div class="flex flex-col items-center gap-2 p-2">
+                        <h2 class="font-semibold">Professional Plan</h2>
+                        <p class="text-center para-txt-default text-base font-light">Unlock Your Website's Potential:
+                          Elevate with Enhanced Plans!</p>
+                        <span>
+                          <span>₹</span>
+                          <del>1,99,999</del>
+                          <span class="bg-q_secondary_1_clr/20 px-4 p-2 rounded-full backdrop-blur-sm">Save 25%</span>
+                        </span>
+                        <strong class="text-2xl sm:text-4xl md:text-5xl">
+                          <span class="font-mono text-q_primary_clr">₹</span>
+                          <span class="font-mono text-q_primary_clr">1,49,999</span>
+                        </strong>
+                        <hr>
+                        <div>
+                          <ul>
+                            <li
+                              class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
+                              <span class="check color-icon"></span>
+                              <span class="w-[calc(100%-24px)]">Premium website design with unique and dynamic
+                                elements</span>
+                            </li>
+                            <li
+                              class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
+                              <span class="check color-icon"></span>
+                              <span class="w-[calc(100%-24px)]">Development of an advanced website with E-commerce
+                                functionality</span>
+                            </li>
+                            <li
+                              class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
+                              <span class="check color-icon"></span>
+                              <span class="w-[calc(100%-24px)]">Advanced features such as user accounts, payment
+                                gateway</span>
+                            </li>
+                            <li
+                              class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
+                              <span class="check color-icon"></span>
+                              <span class="w-[calc(100%-24px)]">Advaned responsive design with fluid layouts</span>
+                            </li>
+                            <li
+                              class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
+                              <span class="check color-icon"></span>
+                              <span class="w-[calc(100%-24px)]">Advanced CMS integration with custom modules and plugins
+                                (Wix, Wordress etc. / Free), If you integrate Shopify (Shopify Extra charges may
+                                apply)</span>
+                            </li>
+                            <li
+                              class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
+                              <span class="check color-icon"></span>
+                              <span class="w-[calc(100%-24px)]">Premium SEO optimization for better search and product
+                                visibility</span>
+                            </li>
+                            <li
+                              class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
+                              <span class="check color-icon"></span>
+                              <span class="w-[calc(100%-24px)]">1 year Cloud Hosting with dedicated resources and
+                                support Free, After 1 year you have to pay <br><strong class="font-bold font-mono">₹
+                                  9,999/year</strong></span>
+                            </li>
+                            <li
+                              class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
+                              <span class="check color-icon"></span>
+                              <span class="w-[calc(100%-24px)]">Updates & additional pages: Extra charges apply</span>
+                            </li>
+                            <li
+                              class="list-none flex gap-2 border-b border-q_br_clr py-2 text-sm tracking-wide items-center">
+                              <span class="check color-icon"></span>
+                              <span class="w-[calc(100%-24px)]">Free setup for Google Search Console, Google
+                                Analytics</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                    </div>
                   </div>
-                </div>
 
                 </div>
                 <div class="overflow-hidden bg-q_background_clr border border-q_br_clr shadow-inner rounded-md w-full">
-                  <div id="pricingPreview" class="z-50 relative px-0 md:px-4 py-8">
-                    <div class="w-full h-auto min-h-40 glide__track overflow-x-auto" data-glide-el="track">
-                      <div class="glide__slides flex gap-x-4 justify-center items-start">
-                         
-                      </div>
-                    </div>
+                  <div id="pricingChanger"
+                    class="w-full flex items-center justify-center flex-wrap relative bg-q_background_clr/50 backdrop-blur-lg p-4 gap-x-4 gap-y-8"
+                    style="z-index: 100000;">
+                    <a href="./#pricingPreview">
+                      <strong
+                        class="list-none py-2 rounded-full text-sm font-semibold tracking-wider px-4 bg-q_surface_clr border-gradient bg-transparent star">Web
+                        Development</strong>
+                    </a>
+                    <a href="./pricing#branding">
+                      <strong
+                        class="list-none py-2 rounded-full text-sm font-semibold tracking-wider px-4 bg-q_surface_clr border-gradient hover:bg-transparent hover:text-black cursor-pointer transition-all">Logo
+                        Designing</strong>
+                    </a>
+                    <a href="./pricing#graphicdesign">
+                      <strong
+                        class="list-none py-2 rounded-full text-sm font-semibold tracking-wider px-4 bg-q_surface_clr border-gradient hover:bg-transparent hover:text-black cursor-pointer transition-all">Graphic
+                        Design</strong>
+                    </a>
+                    <a href="./pricing#seo&sem">
+                      <strong
+                        class="list-none py-2 rounded-full text-sm font-semibold tracking-wider px-4 bg-q_surface_clr border-gradient hover:bg-transparent hover:text-black cursor-pointer transition-all">Seo</strong>
+                    </a>
                   </div>
-                <div id="pricingChanger" class="w-full flex items-center justify-center flex-wrap relative bg-q_background_clr/50 backdrop-blur-lg p-4 gap-x-4 gap-y-8" style="z-index: 100000;">
-                  <a href="./#pricingPreview">
-                    <strong class="list-none py-2 rounded-full text-sm font-semibold tracking-wider px-4 bg-q_surface_clr border-gradient bg-transparent star">Web Development</strong>
-                  </a>
-                  <a href="./pricing#branding">
-                    <strong class="list-none py-2 rounded-full text-sm font-semibold tracking-wider px-4 bg-q_surface_clr border-gradient hover:bg-transparent hover:text-black cursor-pointer transition-all">Logo Designing</strong>
-                  </a>
-                  <a href="./pricing#graphicdesign">
-                    <strong class="list-none py-2 rounded-full text-sm font-semibold tracking-wider px-4 bg-q_surface_clr border-gradient hover:bg-transparent hover:text-black cursor-pointer transition-all">Graphic Design</strong>
-                  </a>
-                  <a href="./pricing#seo&sem">
-                    <strong class="list-none py-2 rounded-full text-sm font-semibold tracking-wider px-4 bg-q_surface_clr border-gradient hover:bg-transparent hover:text-black cursor-pointer transition-all">Seo</strong>
-                  </a>
                 </div>
               </div>
             </div>
-          </div>
           </div>
         </div>
         <div id="testimonials" class="w-full h-auto flex justify-center items-center p-1 md:p-4">
@@ -417,70 +532,91 @@
             <div>
               <strong class="text-heading-small">Testimonials</strong>
               <div class="flex gap-4 justify-between flex-col md:flex-row">
-                <strong class="text-heading text-left tracking-wider"><span class="txt-stroke-white">Real</span> <span class="text-q_primary_clr">Voices</span>,<br><span class="txt-stroke-white text-q_tx_clr">Real</span> <span class="text-q_primary_clr">Stories</span>,<br><span class="txt-stroke-white">Real</span> <span class="text-q_primary_clr">Impact</span></strong>
-                <p class="w-full max-w-xl p-0 md:p-4 para-txt-default">Discover what others are saying about us! Listen to Our Community's Success Stories.</p>
+                <strong class="text-heading text-left tracking-wider"><span class="txt-stroke-white">Real</span> <span
+                    class="text-q_primary_clr">Voices</span>,<br><span
+                    class="txt-stroke-white text-q_tx_clr">Real</span> <span
+                    class="text-q_primary_clr">Stories</span>,<br><span class="txt-stroke-white">Real</span> <span
+                    class="text-q_primary_clr">Impact</span></strong>
+                <p class="w-full max-w-xl p-0 md:p-4 para-txt-default">Discover what others are saying about us! Listen
+                  to Our Community's Success Stories.</p>
               </div>
             </div>
             <div class="absolute top-0 right-0 -z-50">
               <img class="w-56 h-auto opacity-20" src="./public/assets/quote.svg" alt="quote image">
             </div>
             <div class="glide">
-              <div class="border-b border-q_br_clr p-2 flex py-8 relative overflow-hidden glide__track" data-glide-el="track">
-                <div class="w-full glide__slides flex">
-                  <div class="glide__slide w-auto inline-flex flex-col items-center justify-center">
+              <div class="border-b border-q_br_clr flex px-1 md:px-2 py-8 relative overflow-hidden glide__track"
+                data-glide-el="track">
+                <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div class="p-4 border border-q_br_clr shadow-md rounded-md w-auto inline-flex flex-col items-center justify-center">
                     <div class="flex gap-2">
                       <div>
                         <img class="w-14 h-14 rounded-full object-cover" src="./public/assets/review1.webp" alt="">
                       </div>
-                      <div class="flex justify-between flex-col">
+                      <div class="flex justify-start flex-col">
                         <strong class="text-xl">Akhil Rao</strong>
                         <p class="my-0 text-sm para-txt-default">E-commerce Website</p>
                       </div>
                     </div>
                     <div class="w-full max-w-lg text-q_tx_clr/75">
-                      <p class="text-center para-txt-default">Our decision to work with CoastWebOnline for our jewelry website has truly paid off. Their understanding of the aesthetics and intricacies of the jewelry industry is evident in the stunning website they created for us. From captivating visuals to seamless navigation, CoastWebOnline has given our jewelry brand an online presence that sparkles as much as our products do.</p>
+                      <p class="text-center para-txt-default text-sm">Our decision to work with CoastWebOnline for our jewelry
+                        website has truly paid off. Their understanding of the aesthetics and intricacies of the jewelry
+                        industry is evident in the stunning website they created for us. From captivating visuals to
+                        seamless navigation, CoastWebOnline has given our jewelry brand an online presence that sparkles
+                        as much as our products do.</p>
                     </div>
                   </div>
-                  <div class="glide__slide w-auto inline-flex flex-col items-center justify-center">
+                  <div class="p-4 border border-q_br_clr shadow-md rounded-md w-auto inline-flex flex-col items-center justify-center">
                     <div class="flex gap-2">
                       <div>
                         <img class="w-14 h-14 rounded-full object-cover" src="./public/assets/review2.webp" alt="">
                       </div>
-                      <div class="flex justify-between flex-col">
+                      <div class="flex justify-start flex-col">
                         <strong class="text-xl">Yatin Setia</strong>
                         <p class="my-0 text-sm para-txt-default">Portfolio Website</p>
                       </div>
                     </div>
                     <div class="w-full max-w-lg text-q_tx_clr/75">
-                      <p class="text-center para-txt-default">CoastWebOnline transformed my personal portfolio into a professional showcase. Their attention to detail and creative flair brought my vision to life, creating a website that not only reflects my skills and achievements but also stands out in the competitive job market. The collaboration was smooth, and the result is a personal portfolio that I'm proud to share.</p>
+                      <p class="text-center para-txt-default text-sm">CoastWebOnline transformed my personal portfolio into a
+                        professional showcase. Their attention to detail and creative flair brought my vision to life,
+                        creating a website that not only reflects my skills and achievements but also stands out in the
+                        competitive job market. The collaboration was smooth, and the result is a personal portfolio
+                        that I'm proud to share.</p>
                     </div>
                   </div>
-                  <div class="glide__slide w-auto inline-flex flex-col items-center justify-center">
+                  <div class="p-4 border border-q_br_clr shadow-md rounded-md w-auto inline-flex flex-col items-center justify-center">
                     <div class="flex gap-2">
                       <div>
                         <img class="w-14 h-14 rounded-full object-cover" src="./public/assets/review3.webp" alt="">
                       </div>
-                      <div class="flex justify-between flex-col">
+                      <div class="flex justify-start flex-col">
                         <strong class="text-xl">Harish Saini</strong>
                         <p class="my-0 text-sm para-txt-default">Educational Website</p>
                       </div>
                     </div>
                     <div class="w-full max-w-lg text-q_tx_clr/75">
-                      <p class="text-center para-txt-default">Choosing CoastWebOnline for our school website was a wise decision. Their team demonstrated a deep understanding of educational needs, resulting in a website that seamlessly integrates information, engagement, and ease of use. The professionalism exhibited during the process ensured our school's online presence reflects our commitment to academic excellence.</p>
+                      <p class="text-center para-txt-default text-sm">Choosing CoastWebOnline for our school website was a wise
+                        decision. Their team demonstrated a deep understanding of educational needs, resulting in a
+                        website that seamlessly integrates information, engagement, and ease of use. The professionalism
+                        exhibited during the process ensured our school's online presence reflects our commitment to
+                        academic excellence.</p>
                     </div>
                   </div>
-                  <div class="glide__slide w-auto inline-flex flex-col items-center justify-center">
+                  <div class="p-4 border border-q_br_clr shadow-md rounded-md w-auto inline-flex flex-col items-center justify-center">
                     <div class="flex gap-2">
                       <div>
                         <img class="w-14 h-14 rounded-full object-cover" src="./public/assets/review4.webp" alt="">
                       </div>
-                      <div class="flex justify-between flex-col">
+                      <div class="flex justify-start flex-col">
                         <strong class="text-xl">Pawan Sethi</strong>
                         <p class="my-0 text-sm para-txt-default">E-commerce Redesign</p>
                       </div>
                     </div>
                     <div class="w-full max-w-lg text-q_tx_clr/75">
-                      <p class="text-center para-txt-default">Grateful for Diamond Web's incredible work on my website! I'm from India but working here in New York, their expertise and attention to detail truly made a difference. Thank you for bringing a touch of artistry and professionalism to my online presence!</p>
+                      <p class="text-center para-txt-default text-sm">Grateful for Diamond Web's incredible work on my website!
+                        I'm from India but working here in New York, their expertise and attention to detail truly made
+                        a difference. Thank you for bringing a touch of artistry and professionalism to my online
+                        presence!</p>
                     </div>
                   </div>
                 </div>
@@ -490,7 +626,9 @@
         </div>
         <div id="contactForm" class="bg-art w-full h-auto flex justify-center items-center overflow-hidden">
           <div class="p-8 w-full max-w-7xl mx-auto relative z-50 bg-q_background_clr/50 backdrop-blur-lg">
-            <strong class="w-full flex flex-col items-center text-center text-xl sm:text-2xl md:text-4xl font-normal tracking-wide">Contact Form <br> Say Hello to Us!</strong>
+            <strong
+              class="w-full flex flex-col items-center text-center text-xl sm:text-2xl md:text-4xl font-normal tracking-wide">Contact
+              Form <br> Say Hello to Us!</strong>
             <div>
               <form action="#">
                 <div>
@@ -730,9 +868,9 @@
                   <div class="input-group">
                     <label for="cust_services">Select Service<sup>*</sup></label>
                     <select name="cust_services" id="cust_services">
-                      <option value="logo_design">Logo Design</option>
-                      <option value="development">Web Development</option>
-                      <option value="uiuxdesign">UI/UX Design</option>
+                      <option value="logo_design">Logo Designing</option>
+                      <option value="development">Web Development & Designing</option>
+                      <option value="uiuxdesign">Graphic Design</option>
                       <option value="seo">SEO</option>
                     </select>
                   </div>
@@ -742,42 +880,42 @@
                     <label for="cust_msg">Your Message for Us<sup>*</sup></label>
                     <textarea rows="5" class="w-full" name="cust_msg" id="cust_msg" placeholder="I want ..."></textarea>
                   </div>
-                  <button id="sendForm" type="button" class="w-full px-2 py-4 border border-q_br_clr rounded-md bg-q_primary_clr hover:scale-95 transition-all text-black/50 font-bold text-xl">Say Hello</button>
+                  <button id="sendForm" type="button"
+                    class="w-full px-2 py-4 border border-q_br_clr rounded-md bg-q_primary_clr hover:scale-95 transition-all text-black/50 font-bold text-xl">Say
+                    Hello</button>
                 </div>
               </form>
             </div>
-          </div>  
+          </div>
         </div>
       </div>
     </main>
     <div class="blob-box w-full h-full fixed top-0 sm:-top-1/3 md:-top-1/2 -right-1/2 -z-50">
       <div class="blob-container w-full h-full absolute -z-50">
-        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="100%" id="blobSvg">
           <defs>
-            <pattern id="pattern3" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse" fill="var(--firstStopColor)">
+            <pattern id="pattern3" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse"
+              fill="var(--firstStopColor)">
               <path d="M0 40L40 0H20L0 20M40 40V20L20 40"></path>
             </pattern>
           </defs>
           <path fill="url(#pattern3)">
-            <animate 
-            attributeName="d"
-            dur="25000ms"
-            repeatCount="indefinite"
-            values="
+            <animate attributeName="d" dur="25000ms" repeatCount="indefinite" values="
             M377,274Q341,298,360,367.5Q379,437,328,455.5Q277,474,234,439.5Q191,405,131,406.5Q71,408,55.5,355Q40,302,57,254.5Q74,207,88.5,163Q103,119,161,143.5Q219,168,243.5,133.5Q268,99,322.5,82.5Q377,66,372.5,127Q368,188,390.5,219Q413,250,377,274Z;
             M419.12076,300.89639Q443.51075,351.79277,417.8526,404.03849Q392.19445,456.2842,330.02992,427.08118Q267.86538,397.87815,219.79059,427.82798Q171.7158,457.77781,150.2842,407.51496Q128.8526,357.2521,94.57588,327.08866Q60.29916,296.92521,89.98613,257.54487Q119.67311,218.16454,98.1421,157.41773Q76.61109,96.67092,133.59614,94.27454Q190.58118,91.87815,228.78311,100.00639Q266.98504,108.13462,296.11109,124.11328Q325.23714,140.09193,365.39529,154.40386Q405.55344,168.7158,400.1421,209.3579Q394.73076,250,419.12076,300.89639Z;
             M361.5,276.5Q351,303,354.5,355Q358,407,315,417.5Q272,428,231,418Q190,408,140.5,399.5Q91,391,64.5,346.5Q38,302,48,252.5Q58,203,122,198Q186,193,179.5,120.5Q173,48,223.5,48Q274,48,333,46Q392,44,364.5,124.5Q337,205,354.5,227.5Q372,250,361.5,276.5Z;
             M440,303.5Q454,357,423,406Q392,455,326.5,400Q261,345,224,380.5Q187,416,187,361Q187,306,178,288Q169,270,166.5,249.5Q164,229,137,177.5Q110,126,149,106.5Q188,87,228.5,92.5Q269,98,287,134Q305,170,344,175Q383,180,404.5,215Q426,250,440,303.5Z;
             M377,274Q341,298,360,367.5Q379,437,328,455.5Q277,474,234,439.5Q191,405,131,406.5Q71,408,55.5,355Q40,302,57,254.5Q74,207,88.5,163Q103,119,161,143.5Q219,168,243.5,133.5Q268,99,322.5,82.5Q377,66,372.5,127Q368,188,390.5,219Q413,250,377,274Z;
-            "
-            >
+            ">
             </animate>
           </path>
         </svg>
       </div>
     </div>
-    
-    <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/public/components/footer.php') ?>
+
+    <?php include_once ($_SERVER['DOCUMENT_ROOT'] . '/public/components/footer.php') ?>
   </div>
-  </body>
+</body>
+
 </html>

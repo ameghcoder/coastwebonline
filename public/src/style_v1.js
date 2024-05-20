@@ -18,6 +18,23 @@ function send(url, data){
         xhr.send(data);
     })
 }
+function checkers(data, type){
+    const checkType = ["name", "phone_number", "email", "text"];
+    const checkPattern = [
+        "/^[a-zA-ZÀ-ÖØ-öø-ÿ' -]+$/",
+        "",
+        "/\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b/",
+    ];
+    if(type === checkType[0]){
+
+    } else if(type === checkType[1]){
+
+    } else if(type === checkType[2]){
+
+    } else if(type === checkType[3]){
+        
+    }
+}
 const init = () => {
     const [windowWidth, windowHeight] = [window.innerWidth, window.innerHeight];
 

@@ -193,7 +193,29 @@
     </div>
     
     <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/public/components/footer.php') ?>
-   
+    <script src="https://unpkg.com/@glidejs/glide"></script>
+    <script>
+      const glide = new Glide(".glide", {
+        type: 'carousel',
+        startAt: 1,
+        perView: 5,
+        focusAt: 'center',
+        hoverpause: true,
+        autoplay: 2000,
+        keyboard: true,
+        animationDuraton: 800,
+        animationTimingFunc: 'cubic-bezier(0.680, -0.550, 0.265, 1.550)',
+        breakpoints: {
+            1000: {
+                perView: 3
+            },
+            600: {
+                perView: 1
+            }
+        },
+      });
+      glide.mount();
+    </script>
   </div>
   </body>
 </html>
