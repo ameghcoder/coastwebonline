@@ -39,7 +39,7 @@
                 <strong class="text-heading-small">Branding</strong>
               </div>
               <div class="w-full p-4">
-                <div class="glide w-full">
+                <div class="glide w-full" style="min-height: 240px;">
                   <div class="glide__track" data-glide-el="track">
                     <ul class="glide__slides flex">
                       <li class="list-none glide__slide flex items-center justify-center mockup-img">
