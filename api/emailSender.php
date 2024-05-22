@@ -4,25 +4,25 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/api/connection.php';
 
 class EmailSender{
     private $Name, $Email, $Tel, $Service, $Msg, $CustId, $Sender, $Subject, $CurrentTime;
-    private const TABLE_NAME = "customer_registration";
+    private const TABLE_NAME = "cwo_customers";
 
-    public function __construct(string $name, string $email, string $tel, string $service, string $msg, string $custId) {
+    public function __construct(array $data) {
         $this->Sender = "contact@coastweb.online";
 
         // customer data
-        $this->Name = $name;
-        $this->Email = $email;
-        $this->Tel = $tel;
-        $this->Service = $service;
-        $this->Msg = $msg;
-        $this->CustId = $custId;
-        $this->Subject = " want to contact Coastweb.online for $service purpose";
+        $this->Name = $data['name'];
+        $this->Email = $data['email'];
+        $this->Tel = $data['tel'];
+        $this->Service = $data['service'];
+        $this->Msg = $data['msg'];
+        $this->CustId = $data['id'];
+        $this->Subject = " want to contact Coastweb.online for " . $data['service'] . " purpose";
 
         // get date
         $currentTimestamp = time();
         $this->CurrentTime = date("Y-m-d H:i:s", $currentTimestamp);
     }
-    private function insertInfoInDB(){
+    private function updateEmailStatus(){
         $_emailStatus = "sent";
         $_conn = conn::connect();
         $_query = "UPDATE " . self::TABLE_NAME . " SET cust_email_status=? WHERE cust_id=?";
@@ -72,7 +72,7 @@ class EmailSender{
         // Send the email
         if (mail($to, $subject, $htmlFile, $headers)) {
             $this->sentToAdmin();
-            return $this->insertInfoInDB();
+            return $this->updateEmailStatus();
         } else {
             return false;
         }

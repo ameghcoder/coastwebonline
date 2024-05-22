@@ -13,30 +13,49 @@ $_Authenticator = new Authenticator("POST");
 if(
     $_Authenticator->check()
 ){
-    // validate data
-    $validate = new ValidationFunctions();
-    $name = isset($_POST['name']) ? $validate->validateName($_POST['name']) : false;
-    $email = isset($_POST['email']) ? $validate->validateEmail($_POST['email']) : false;
-    $telNumber = isset($_POST['number']) ? $validate->validateNumber($_POST['number']) : false;
-    $service = isset($_POST['service']) ? $validate->validateTel($_POST['service']) : false;
-    $msg = isset($_POST['msg']) ? $validate->validateMsg($_POST['msg']) : false;
+    $_data = $_POST['data'];
+    if($_data){
+        $_data = json_decode($_data, true);
 
-    if($name && $email && $telNumber && $service && $msg){
+        // Now validate the data
+        $validate = new ValidationFunctions();
+        $name = $validate->validateName($_data['name']) ? $_data['name'] : false;
+        $email = $validate->validateEmail($_data['email']) ? $_data['email'] : false;
+        $phoneNumber = $validate->validateTel($_data['tel']) ? $_data['tel'] : false;
+        $msg = $validate->validateMsg($_data['msg']) ? $_data['msg'] : false;
+        $service = $_data['service'];
+        $countryDialCode = $_data['countrydial'];
+        $countryCode = $_data['countrycode'];
 
-        // insert the data
-        $insertCustomerData = new Data();
-        $insertCustomerData = $insertCustomerData->insertCustomer($name, $email, $telNumber, $service, $msg);
-        if(!$insertCustomerData){
-            Sender::msg("e", "Something goes wrong, Refresh the page and Try again");
-            die();
-        }
+        if(
+            $name && $email && $phoneNumber && $msg &&
+            !empty($service) && !empty($countryDialCode) && !empty($countryCode)
+        ){
+            $data = array(
+                "name" => $name,
+                "email" => $email,
+                "tel" => $phoneNumber,
+                "service" => $service,
+                "msg" => $msg,
+                "codes" => $countryCode . '-' . $countryDialCode,
+                "status" => "pending"
+            );
+            $resp = new Data();
+            $resp = $resp->insertCustomer($data);
 
-        // Now send the email
-        $emailResp = new EmailSender($name, $email, $telNumber, $service, $msg, $insertCustomerData);
-        if($emailResp->send()){
-            Sender::msg("s", "We received your application, check your inbox, We connect with you as soon as possible.");
+            if($resp && $resp > 0){
+                $data["id"] = $resp;
+                $emailResp = new EmailSender($data);
+                if($emailResp){
+                    Sender::msg("s", "We received your message, Thanks for connect with us.");
+                } else{
+                    Sender::msg("e", "Something goes wrong, Try again after Refresh the Page");
+                }
+            } else{
+                Sender::msg("e", "Something goes wrong, Try again");
+            }
         } else{
-            Sender::msg("s", "We received your application, We connect with you as soon as possible.");
+            Sender::msg("e", "Some of the field data is invalid, Please check & try again");
         }
 
     } else{

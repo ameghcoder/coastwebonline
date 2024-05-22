@@ -52,12 +52,15 @@ try {
         }
         public function validateMsg($data){
             $data = trim($data);
-            $data = filter_var($data, FILTER_SANITIZE_STRING).PHP_EOL;
-            $pattern = "/^[a-zA-Z0-9\s.,!?@#%&*()\"'\/\r\n-]{10,500}$/";
-            if(preg_match($pattern, $data)){
-                return $data;
-            } else{
-                return preg_replace($pattern, '', $data);
+            $data = filter_var($data, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+            $pattern = '/^[a-zA-Z0-9!@#$%^&*()_+\-=\[\]{};\'":\\\\|,.<>\/?\t\n ]*$/';
+
+            if (preg_match($pattern, $data)) {
+                return $data . PHP_EOL;
+            } else {
+                // Remove characters that do not match the pattern
+                $data = preg_replace('/[^a-zA-Z0-9!@#$%^&*()_+\-=\[\]{};\'":\\\\|,.<>\/?\t\n ]/', '', $data);
+                return $data . PHP_EOL;
             }
         }
     }

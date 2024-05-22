@@ -18,21 +18,28 @@ function send(url, data){
         xhr.send(data);
     })
 }
+/**
+ * 
+ * @param {string} data The data or text that you want to check or validate
+ * @param {string} type Type of data means 
+ * @returns 
+ */
 function checkers(data, type){
     const checkType = ["name", "phone_number", "email", "text"];
     const checkPattern = [
-        "/^[a-zA-ZÀ-ÖØ-öø-ÿ' -]+$/",
-        "",
-        "/\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b/",
+        /^[a-zA-ZÀ-ÖØ-öø-ÿ' -]+$/,
+        /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/,
+        /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b/,
+        /^[a-zA-Z0-9!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?\t\n ]*$/
     ];
     if(type === checkType[0]){
-
+        return checkPattern[0].test(data);
     } else if(type === checkType[1]){
-
+        return checkPattern[1].test(data);
     } else if(type === checkType[2]){
-
+        return checkPattern[2].test(data);
     } else if(type === checkType[3]){
-        
+        return checkPattern[3].test(data);
     }
 }
 const init = () => {
@@ -148,31 +155,36 @@ const init = () => {
     // send form details
     const sendButton = document.getElementById("sendForm");
     sendButton && sendButton.addEventListener("click", ()=>{
-        // const custName = document.getElementById("cust_name");
-        // const custEmail = document.getElementById("cust_email");
-        // const custCountry = document.getElementById("cust_name");
-        // const custName = document.getElementById("cust_name");
-        // const custName = document.getElementById("cust_name");
-        // const custName = document.getElementById("cust_name");
-        // const custName = document.getElementById("cust_name");
-        send("/api/submit", formData).then((r) => {
-            let respJsn = checkJson(r);
-            if(respJsn){
-                showMsg(respJsn['flag'], respJsn['msg']);
-                if(respJsn['flag'] == 's'){
-                    document.getElementById("popupCongrat").classList.add("flex");
-                    document.getElementById("popupCongrat").classList.remove("hidden");
-                    countDownForResendEmail();
-                }
-                resendButton();
-            } else{
-                showMsg("e", "Something goes wrong - Try again Later");
-                console.log("F-T-Side Error");
+        const custName = checkers(document.getElementById("cust_name").value, "name") ? document.getElementById("cust_name").value : false;
+        const custEmail = checkers(document.getElementById("cust_email").value, "email") ? document.getElementById("cust_email").value : false;
+        const custPhoneNumber = checkers(document.getElementById("cust_phone").value, "phone_number") ? document.getElementById("cust_phone").value : false;
+        const custMsg = checkers(document.getElementById("cust_msg").value, "text") ? document.getElementById("cust_msg").value : false;
+        const custService = document.getElementById("cust_services").value;
+        const custCountryDial = document.getElementById("cust_country").value;
+        const custCountryCode = document.querySelector(`option[value="${custCountryDial}"]`).getAttribute("data-countrycode");
+
+        if(custName && custEmail && custPhoneNumber && custMsg && custService && custCountryDial && custCountryCode){
+            const dataObj = {
+                name: custName,
+                email: custEmail,
+                tel: custPhoneNumber,
+                msg: custMsg,
+                service: custService,
+                countrydial: custCountryDial,
+                countrycode: custCountryCode
             }
-        }).catch((e) => {
-            showMsg("e", "Something goes wrong - Try again later");
-            console.log("F-C-Side Error");
-        })
+
+            const formData = new FormData();
+            formData.append("data", JSON.stringify(dataObj));
+
+            send("/api/submit", formData).then((r) => {
+                console.log(r);
+            }).catch((e) => {
+                console.error("F-C-Side Error");
+            })
+        }
+
+
     })
 }
 document.readyState === "interactive" ? init() : document.addEventListener('DOMContentLoaded', init);
