@@ -42,6 +42,13 @@ function checkers(data, type){
         return checkPattern[3].test(data);
     }
 }
+const checkJson = (e) => {
+    try{
+        return JSON.parse(e);
+    } catch{
+        return false;
+    }
+}
 const init = () => {
     const [windowWidth, windowHeight] = [window.innerWidth, window.innerHeight];
 
@@ -178,7 +185,20 @@ const init = () => {
             formData.append("data", JSON.stringify(dataObj));
 
             send("/api/submit", formData).then((r) => {
-                console.log(r);
+                let respJsn = checkJson(r);
+                if(respJsn){
+                    if(respJsn['flag'] === 's'){
+                        sendButton.innerText = respJsn['msg'];
+                        sendButton.style.background = "lime";
+                    } else{
+                        sendButton.innerText = respJsn['msg'];
+                        sendButton.style.background = "red";
+                    }
+                } else{
+                    sendButton.innerText = "Something went wrong, Try again Later or Email contact@coastweb.online";
+                    sendButton.style.background = "red";
+                }
+                sendButton.setAttribute("disabled", "true");
             }).catch((e) => {
                 console.error("F-C-Side Error");
             })

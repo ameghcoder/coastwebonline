@@ -79,7 +79,7 @@
     </div>
   </div>
 </footer>
-<script src="./public/src/style_v1.js"></script>
+<script src="./public/src/compress_js_v1.js"></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-TY4T56KN0G"></script>
 <script>
