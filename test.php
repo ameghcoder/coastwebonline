@@ -7,5 +7,3 @@
 
 // localhost|username|password|database
 // localhost|u648561073_dceyewr|7ya^j^dA+B|u648561073_customer_offer
-
-echo base64_encode('localhost|u648561073_dceyewr|7ya^j^dA+B|u648561073_customer_offer');

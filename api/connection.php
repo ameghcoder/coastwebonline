@@ -4,9 +4,9 @@ try {
     require_once $_SERVER['DOCUMENT_ROOT'] . "/api/Auth/PhaseType.php";
     class conn
     {
-        public static function connect($_db_name = "dceyewr_prelaunching")
+        public static function connect($_db_name = "cwo_info")
         {
-            $hash = base64_decode('bG9jYWxob3N0fHU2NDg1NjEwNzNfZGNleWV3cnw3eWFeal5kQStCfHU2NDg1NjEwNzNfY3VzdG9tZXJfb2ZmZXI=');
+            $hash = base64_decode('bG9jYWxob3N0fHU3MTU4MTk1MTVfY29hc3R3ZWJvbmxpbmV8eFo/QF1KdzJ8dTcxNTgxOTUxNV9jd29faW5mbw==');
             $hash = explode("|", $hash);
             $phaseType = phase::retPhase();
             if ($phaseType === "development") {

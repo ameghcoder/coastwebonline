@@ -46,7 +46,7 @@ if(
             if($resp && $resp > 0){
                 $data["id"] = $resp;
                 $emailResp = new EmailSender($data);
-                if($emailResp){
+                if($emailResp->send()){
                     Sender::msg("s", "We received your message, Thanks for connect with us.");
                 } else{
                     Sender::msg("e", "Something goes wrong, Try again after Refresh the Page");
