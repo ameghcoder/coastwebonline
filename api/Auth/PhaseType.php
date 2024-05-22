@@ -3,7 +3,7 @@
 try {
     class phase
     {
-        private const TYPE = "development";
+        private const TYPE = "production";
         public static function retPhase()
         {
             return self::TYPE;
