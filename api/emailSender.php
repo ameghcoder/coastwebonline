@@ -46,7 +46,7 @@ class EmailSender{
         $from = $this->Sender;
 
         // Define the email subject
-        $subject = $this->Subject;
+        $subject = $this->Name . $this->Subject;
 
         // Define the HTML message
         $htmlFile = file_get_contents($_SERVER['DOCUMENT_ROOT'] . "/api/template/clientReceives.html");
