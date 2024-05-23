@@ -33,24 +33,22 @@
         <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <ul class="flex gap-y-2 flex-col items-center sm:items-end">
             <li class="list-none"><strong class="text-lg font-semibold uppercase" style="letter-spacing: 4px">Heading</strong></li>
-            <li class="list-none text-center sm:text-right"><a class="para-txt-default link-hover-underline before:bg-q_tx_clr/50" href="#">Home</a></li>
-            <li class="list-none text-center sm:text-right"><a class="para-txt-default link-hover-underline before:bg-q_tx_clr/50" href="#">About</a></li>
-            <li class="list-none text-center sm:text-right"><a class="para-txt-default link-hover-underline before:bg-q_tx_clr/50" href="#">Services</a></li>
-            <li class="list-none text-center sm:text-right"><a class="para-txt-default link-hover-underline before:bg-q_tx_clr/50" href="#">Career</a></li>
+            <li class="list-none text-center sm:text-right"><a class="para-txt-default link-hover-underline before:bg-q_tx_clr/50" href="/">Home</a></li>
+            <li class="list-none text-center sm:text-right"><a class="para-txt-default link-hover-underline before:bg-q_tx_clr/50" href="/#about">About</a></li>
+            <li class="list-none text-center sm:text-right"><a class="para-txt-default link-hover-underline before:bg-q_tx_clr/50" href="/#service">Services</a></li>
+            <li class="list-none text-center sm:text-right"><a class="para-txt-default link-hover-underline before:bg-q_tx_clr/50" href="/#join-us">Career</a></li>
           </ul>
           <ul class="flex gap-y-2 flex-col items-center sm:items-end">
             <li class="list-none"><strong class="text-lg font-semibold uppercase" style="letter-spacing: 4px">Services</strong></li>
-            <li class="list-none text-center sm:text-right"><a class="para-txt-default link-hover-underline before:bg-q_tx_clr/50" href="#">Branding</a></li>
-            <li class="list-none text-center sm:text-right"><a class="para-txt-default link-hover-underline before:bg-q_tx_clr/50" href="#">Development</a></li>
-            <li class="list-none text-center sm:text-right"><a class="para-txt-default link-hover-underline before:bg-q_tx_clr/50" href="#">UI/UX Design</a></li>
-            <li class="list-none text-center sm:text-right"><a class="para-txt-default link-hover-underline before:bg-q_tx_clr/50" href="#">Graphic Design</a></li>
-            <li class="list-none text-center sm:text-right"><a class="para-txt-default link-hover-underline before:bg-q_tx_clr/50" href="#">SEO</a></li>
+            <li class="list-none text-center sm:text-right"><a class="para-txt-default link-hover-underline before:bg-q_tx_clr/50" href="/pricing#branding">Logo Designing</a></li>
+            <li class="list-none text-center sm:text-right"><a class="para-txt-default link-hover-underline before:bg-q_tx_clr/50" href="/pricing#development">Web Development</a></li>
+            <li class="list-none text-center sm:text-right"><a class="para-txt-default link-hover-underline before:bg-q_tx_clr/50" href="/pricing#graphicdesign">Graphic Design</a></li>
+            <li class="list-none text-center sm:text-right"><a class="para-txt-default link-hover-underline before:bg-q_tx_clr/50" href="/pricing#seo&sem">SEO</a></li>
           </ul>
           <ul class="flex gap-y-2 flex-col items-center sm:items-end">
             <li class="list-none"><strong class="text-lg font-semibold uppercase" style="letter-spacing: 4px">Resources</strong></li>
-            <li class="list-none text-center sm:text-right"><a class="para-txt-default link-hover-underline before:bg-q_tx_clr/50" href="#">Projects</a></li>
-            <li class="list-none text-center sm:text-right"><a class="para-txt-default link-hover-underline before:bg-q_tx_clr/50" href="#">Support</a></li>
-            <li class="list-none text-center sm:text-right"><a class="para-txt-default link-hover-underline before:bg-q_tx_clr/50" href="#">Contact Us</a></li>
+            <li class="list-none text-center sm:text-right"><a class="para-txt-default link-hover-underline before:bg-q_tx_clr/50" href="/work">Projects</a></li>
+            <li class="list-none text-center sm:text-right"><a class="para-txt-default link-hover-underline before:bg-q_tx_clr/50" href="/#contactForm">Contact Us</a></li>
           </ul>
           <ul class="flex gap-y-2 flex-col items-center sm:items-end">
             <li class="list-none"><strong class="text-lg font-semibold uppercase" style="letter-spacing: 4px">Others</strong></li>
@@ -79,7 +77,7 @@
     </div>
   </div>
 </footer>
-<script src="./public/src/compress_js_v1.js"></script>
+<script src="./public/src/compress_js_v2.js"></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-TY4T56KN0G"></script>
 <script>

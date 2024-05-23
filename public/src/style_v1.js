@@ -50,7 +50,15 @@ const checkJson = (e) => {
     }
 }
 const init = () => {
-    const [windowWidth, windowHeight] = [window.innerWidth, window.innerHeight];
+    // check theme mode
+    if(localStorage.getItem("theme") !== null){
+        if(localStorage.getItem("theme") == "light"){
+            document.body.setAttribute("data-theme", "light");
+        } else{
+            document.body.setAttribute("data-theme", "dark");
+            document.getElementById("themeChanger").checked = true;
+        }
+    }
 
     // text slider from up to down
     const textSlider = document.getElementById("text-slider-upDown");
@@ -170,6 +178,7 @@ const init = () => {
         const custCountryDial = document.getElementById("cust_country").value;
         const custCountryCode = document.querySelector(`option[value="${custCountryDial}"]`).getAttribute("data-countrycode");
 
+        const msgbox = document.getElementById("msgbox");
         if(custName && custEmail && custPhoneNumber && custMsg && custService && custCountryDial && custCountryCode){
             const dataObj = {
                 name: custName,
@@ -180,7 +189,6 @@ const init = () => {
                 countrydial: custCountryDial,
                 countrycode: custCountryCode
             }
-
             const formData = new FormData();
             formData.append("data", JSON.stringify(dataObj));
 
@@ -202,9 +210,34 @@ const init = () => {
             }).catch((e) => {
                 console.error("F-C-Side Error");
             })
+        } else{
+            if(!custName){
+                msgbox.innerText = "Invalid Name value";
+            } else if(!custPhoneNumber){
+                msgbox.innerText = "Invalid Phone Number value";
+            } else if(!custEmail){
+                msgbox.innerText = "Invalid Email value";
+            } else if(!custMsg){
+                msgbox.innerText = "Invalid Message value";
+            } else{
+                msgbox.innerText = "Invalid Values, Try Again";
+            }
+            setTimeout(() => {
+                msgbox.innerText = "";
+            }, 3000);
         }
+    })
 
-
+    // toggle changer
+    const themeChanger = document.getElementById("themeChanger");
+    themeChanger.addEventListener("change", (e) => {
+        if(e.target.checked){
+            document.body.setAttribute("data-theme", "dark");
+            localStorage.setItem("theme", "dark");
+        } else{
+            document.body.setAttribute("data-theme", "light");
+            localStorage.setItem("theme", "light");
+        }
     })
 }
 document.readyState === "interactive" ? init() : document.addEventListener('DOMContentLoaded', init);

@@ -33,6 +33,13 @@
           <li class="list-none group relative px-2 py-1 w-full lg:w-auto"><a class="flex items-center h-auto lg:h-8 w-full transition-all gap-2 hover:bg-q_surface_clr p-4 lg:p-1 rounded-md lg:link-hover-underline" href="./#testimonials">
             <span class="font-bold text-q_tx_clr/60 hover:text-q_tx_clr">Testimonials</span>
           </a></li>
+          <li class="list-none group relative px-2 py-1 w-full lg:w-auto">
+            <label class="inline-flex items-center m-auto cursor-pointer">
+              <input id="themeChanger" type="checkbox" value="" class="sr-only peer">
+              <div class="relative w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+              <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300 sr-only">Small toggle</span>
+            </label>
+          </li>
             <!-- <li class="list-none group relative px-2 py-1 w-full lg:w-auto">
               <button type="button" class="relative bg-q_primary_clr rounded-full px-4 py-2 group">
                 <span class="z-10 text-base font-semibold tracking-wider text-q_background_clr transition-all">Customer login</span>

@@ -631,6 +631,7 @@
               Form <br> Say Hello to Us!</strong>
             <div>
               <form action="#">
+                
                 <div>
                   <div class="input-group">
                     <label for="cust_name">Your Name<sup>*</sup></label>
@@ -880,6 +881,7 @@
                     <label for="cust_msg">Your Message for Us<sup>*</sup></label>
                     <textarea rows="5" class="w-full" name="cust_msg" id="cust_msg" placeholder="I want ..."></textarea>
                   </div>
+                  <p id="msgbox" class="text-red-950 font-bold"></p>
                   <button id="sendForm" type="button"
                     class="w-full px-2 py-4 border border-q_br_clr rounded-md bg-q_primary_clr hover:scale-95 transition-all text-black/50 font-bold text-xl">Say
                     Hello</button>
