@@ -22,7 +22,7 @@
             <span class="font-bold text-q_tx_clr/60 hover:text-q_tx_clr">About</span>
           </a></li>
           <li class="list-none group relative px-2 py-1 w-full lg:w-auto"><a class="flex items-center h-auto lg:h-8 w-full transition-all gap-2 hover:bg-q_surface_clr p-4 lg:p-1 rounded-md lg:link-hover-underline" href="./work">
-            <span class="font-bold text-q_tx_clr/60 hover:text-q_tx_clr">Our_Work</span>
+            <span class="font-bold text-q_tx_clr/60 hover:text-q_tx_clr">My_Work</span>
           </a></li>
           <li class="list-none group relative px-2 py-1 w-full lg:w-auto"><a class="flex items-center h-auto lg:h-8 w-full transition-all gap-2 hover:bg-q_surface_clr p-4 lg:p-1 rounded-md lg:link-hover-underline" href="./#service">
             <span class="font-bold text-q_tx_clr/60 hover:text-q_tx_clr">Services</span>
