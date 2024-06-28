@@ -48,7 +48,7 @@
         <div id="about" class="w-full h-auto flex justify-center items-center p-1 md:p-4 relative">
           <div class="w-full max-w-7xl mx-auto">
             <div>
-              <strong class="text-heading-small">Our Team</strong>
+              <strong class="text-heading-small">My Self</strong>
               <div class="flex gap-2 justify-between flex-col md:flex-row">
                 <strong class="text-heading text-left tracking-wider">Expert <span
                     class="text-q_primary_clr">Team</span><br>Pro <span
@@ -58,40 +58,7 @@
               </div>
               <div class="infinity-slider-container w-full px-10 py-4 overflow-hidden whitespace-nowrap">
                 <div class="inline-block h-52 logo-slide inf_slider">
-                  <div class="relative mx-4 inline-block w-52 h-52 group">
-                    <div class="absolute w-52 h-52 shadow-md transition-all">
-                      <img src="./public/assets/Backend_Developer.jpg" class="w-full h-full object-cover transition-all"
-                        alt="teams member image">
-                      <span class="absolute -bottom-1 -left-1 w-full z-20">
-                        <span
-                          class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">Backend
-                          Developer</span>
-                      </span>
-                      <span
-                        class="absolute -bottom-1 -right-1 w-full -z-10 text-right group-hover:-bottom-6 transition-all">
-                        <span
-                          class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">Bharat
-                          Sharama</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="relative mx-4 inline-block w-52 h-52 group">
-                    <div class="absolute w-52 h-52 shadow-md transition-all">
-                      <img src="./public/assets/Frontend_Developer.jpg"
-                        class="w-full h-full object-cover transition-all" alt="teams member image">
-                      <span class="absolute -bottom-1 -left-1 w-full z-20">
-                        <span
-                          class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">Frontend
-                          Developer</span>
-                      </span>
-                      <span
-                        class="absolute -bottom-1 -right-1 w-full -z-10 text-right group-hover:-bottom-6 transition-all">
-                        <span
-                          class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">Ankit
-                          Yadav</span>
-                      </span>
-                    </div>
-                  </div>
+                  
                   <div class="relative mx-4 inline-block w-52 h-52 group">
                     <div class="absolute w-52 h-52 shadow-md transition-all">
                       <span
@@ -111,40 +78,6 @@
                         <span
                           class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">Yashraj
                           (FO & CEO)</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="relative mx-4 inline-block w-52 h-52 group">
-                    <div class="absolute w-52 h-52 shadow-md transition-all">
-                      <img src="./public/assets/SEO_Expert.jpg" class="w-full h-full object-cover transition-all"
-                        alt="teams member image">
-                      <span class="absolute -bottom-1 -left-1 w-full z-20">
-                        <span
-                          class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">SEO,
-                          SMM Expert</span>
-                      </span>
-                      <span
-                        class="absolute -bottom-1 -right-1 w-full -z-10 text-right group-hover:-bottom-6 transition-all">
-                        <span
-                          class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">Shubham
-                          Sharma</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="relative mx-4 inline-block w-52 h-52 group">
-                    <div class="absolute w-52 h-52 shadow-md transition-all">
-                      <img src="./public/assets/Social_Media_Expert.jpg"
-                        class="w-full h-full object-cover transition-all" alt="teams member image">
-                      <span class="absolute -bottom-1 -left-1 w-full z-20">
-                        <span
-                          class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">SMM
-                          Expert</span>
-                      </span>
-                      <span
-                        class="absolute -bottom-1 -right-1 w-full -z-10 text-right group-hover:-bottom-6 transition-all">
-                        <span
-                          class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">Sagar
-                          Mehra</span>
                       </span>
                     </div>
                   </div>
