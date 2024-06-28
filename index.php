@@ -58,7 +58,94 @@
               </div>
               <div class="infinity-slider-container w-full px-10 py-4 overflow-hidden whitespace-nowrap">
                 <div class="inline-block h-52 logo-slide inf_slider">
-                  
+                  <div class="relative mx-4 inline-block w-52 h-52 group">
+                    <div class="absolute w-52 h-52 shadow-md transition-all">
+                      <span
+                        class="absolute z-50 w-8 h-8 rounded-md flex items-center justify-center top-2 right-2 hover:scale-110">
+                        <a href="https://www.linkedin.com/in/yrjdeveloper/"><span
+                            class="small-icon linkedIn"></span></a>
+                      </span>
+                      <img src="./public/assets/FullStack_Developer.jpg"
+                        class="w-full h-full object-cover transition-all" alt="teams member image">
+                      <span class="absolute -bottom-1 -left-1 w-full z-20">
+                        <span
+                          class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">FullStack
+                          Developer</span>
+                      </span>
+                      <span
+                        class="absolute -bottom-1 -right-1 w-full -z-10 text-right group-hover:-bottom-6 transition-all">
+                        <span
+                          class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">Yashraj
+                          (FO & CEO)</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="relative mx-4 inline-block w-52 h-52 group">
+                    <div class="absolute w-52 h-52 shadow-md transition-all">
+                      <span
+                        class="absolute z-50 w-8 h-8 rounded-md flex items-center justify-center top-2 right-2 hover:scale-110">
+                        <a href="https://www.linkedin.com/in/yrjdeveloper/"><span
+                            class="small-icon linkedIn"></span></a>
+                      </span>
+                      <img src="./public/assets/FullStack_Developer.jpg"
+                        class="w-full h-full object-cover transition-all" alt="teams member image">
+                      <span class="absolute -bottom-1 -left-1 w-full z-20">
+                        <span
+                          class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">FullStack
+                          Developer</span>
+                      </span>
+                      <span
+                        class="absolute -bottom-1 -right-1 w-full -z-10 text-right group-hover:-bottom-6 transition-all">
+                        <span
+                          class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">Yashraj
+                          (FO & CEO)</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="relative mx-4 inline-block w-52 h-52 group">
+                    <div class="absolute w-52 h-52 shadow-md transition-all">
+                      <span
+                        class="absolute z-50 w-8 h-8 rounded-md flex items-center justify-center top-2 right-2 hover:scale-110">
+                        <a href="https://www.linkedin.com/in/yrjdeveloper/"><span
+                            class="small-icon linkedIn"></span></a>
+                      </span>
+                      <img src="./public/assets/FullStack_Developer.jpg"
+                        class="w-full h-full object-cover transition-all" alt="teams member image">
+                      <span class="absolute -bottom-1 -left-1 w-full z-20">
+                        <span
+                          class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">FullStack
+                          Developer</span>
+                      </span>
+                      <span
+                        class="absolute -bottom-1 -right-1 w-full -z-10 text-right group-hover:-bottom-6 transition-all">
+                        <span
+                          class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">Yashraj
+                          (FO & CEO)</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="relative mx-4 inline-block w-52 h-52 group">
+                    <div class="absolute w-52 h-52 shadow-md transition-all">
+                      <span
+                        class="absolute z-50 w-8 h-8 rounded-md flex items-center justify-center top-2 right-2 hover:scale-110">
+                        <a href="https://www.linkedin.com/in/yrjdeveloper/"><span
+                            class="small-icon linkedIn"></span></a>
+                      </span>
+                      <img src="./public/assets/FullStack_Developer.jpg"
+                        class="w-full h-full object-cover transition-all" alt="teams member image">
+                      <span class="absolute -bottom-1 -left-1 w-full z-20">
+                        <span
+                          class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">FullStack
+                          Developer</span>
+                      </span>
+                      <span
+                        class="absolute -bottom-1 -right-1 w-full -z-10 text-right group-hover:-bottom-6 transition-all">
+                        <span
+                          class="w-full bg-q_br_clr p-1 text-q_tx_clr font-light text-xs uppercase tracking-widest">Yashraj
+                          (FO & CEO)</span>
+                      </span>
+                    </div>
+                  </div>
                   <div class="relative mx-4 inline-block w-52 h-52 group">
                     <div class="absolute w-52 h-52 shadow-md transition-all">
                       <span
