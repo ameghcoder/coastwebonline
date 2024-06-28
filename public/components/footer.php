@@ -50,11 +50,6 @@
             <li class="list-none text-center sm:text-right"><a class="para-txt-default link-hover-underline before:bg-q_tx_clr/50" href="/work">Projects</a></li>
             <li class="list-none text-center sm:text-right"><a class="para-txt-default link-hover-underline before:bg-q_tx_clr/50" href="/#contactForm">Contact Us</a></li>
           </ul>
-          <ul class="flex gap-y-2 flex-col items-center sm:items-end">
-            <li class="list-none"><strong class="text-lg font-semibold uppercase" style="letter-spacing: 4px">Others</strong></li>
-            <li class="list-none text-center sm:text-right"><a class="para-txt-default link-hover-underline before:bg-q_tx_clr/50" href="#">Sitemap</a></li>
-            <li class="list-none text-center sm:text-right"><a class="para-txt-default link-hover-underline before:bg-q_tx_clr/50" href="#">Privacy</a></li>
-          </ul>
         </div>
       </div>
     </div>
