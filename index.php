@@ -51,7 +51,7 @@
               <strong class="text-heading-small">My Self</strong>
               <div class="flex gap-2 justify-between flex-col md:flex-row">
                 <strong class="text-heading text-left tracking-wider">Expert <span
-                    class="text-q_primary_clr">Team</span><br>Pro <span
+                    class="text-q_primary_clr">Developer gives</span><br>Pro <span
                     class="text-q_primary_clr">Results</span></strong>
                 <p class="w-full max-w-xl py-1 md:px-4 para-txt-default">Our skilled team always gives their best, so
                   you can count on top-notch results. Trust us to get the job done right, every time.</p>
@@ -175,10 +175,10 @@
         </div>
         <div id="service" class="w-full h-auto flex justify-center items-center p-1 md:p-4">
           <div class="w-full max-w-7xl mx-auto">
-            <strong class="text-heading-small">Our Services</strong>
+            <strong class="text-heading-small">Services</strong>
             <div class="flex gap-4 justify-between flex-col md:flex-row">
               <strong class="text-heading text-left tracking-wider">What <span
-                  class="text-q_primary_clr">Services</span><br>We're Offering</strong>
+                  class="text-q_primary_clr">Services</span><br>I'm Offering</strong>
               <p class="w-full max-w-xl py-1 md:px-4 para-txt-default">we offer services that can help business improve
                 their visibility and business reputation online, expand market reach, and increase turnover through
                 effective digital strategies. Following are the services we provide</p>
